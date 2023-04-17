@@ -1,5 +1,9 @@
 import contacts from './data/contacts'
+import projects from './data/projects'
 import ContactCard from './components/ContactCard'
+import ProjectCard from './components/ProjectCard'
+import Skill from './components/Skills'
+import skills from './data/skills'
 
 function App() {
 
@@ -9,11 +13,11 @@ function App() {
 
         {/* Introduction Section */}
         <section className='bg-indigo-400'>
-          <div className='max-w-7xl w-full mx-auto flex items-center justify-center h-[600px] '>
+          <div className='max-w-7xl w-full mx-auto flex items-center justify-center h-[600px]'>
             <div className='flex'>
               <div className='flex flex-col items-center'>
-                <h1 className='text-7xl font-bold text-slate-800 text-center'>Natalie Jane Pacificar</h1>
-                <h1 className='mt-4 text-slate-600'>A simple portfolio website.</h1>
+                <h1 className='text-5xl md:text-7xl lg:text-7xl xl:text-7xl  mx-8 md:mx-16 lg:mx-16 xl"mx-16 font-bold text-slate-800 text-center'>Natalie Jane Pacificar</h1>
+                <h1 className='mt-4 text-slate-600'>A simple portfolio website for my Typescript practice.</h1>
               </div>
             </div>
           </div>
@@ -22,20 +26,28 @@ function App() {
 
         {/* Portfolio Section */}
         <section className='bg-indigo-300'>
-          <div className='max-w-7xl w-full mx-auto h-[800px]'>
-            <div className='flex flex-col'>
-              <h1 className='text-4xl font-medium text-slate-800 px-16 py-8'>Featured Projects</h1>
-              <div className='px-16 py-8'>Projects here</div>
+          <div className='max-w-7xl w-full mx-auto'>
+            <div className='flex flex-col py-16'>
+              <h1 className='text-4xl font-medium text-slate-800 px-16'>Featured Projects</h1>
+              <div className='px-16 flex flex-wrap justify-center mt-8'>
+                {projects.map((project) => (
+                  <ProjectCard {...project}></ProjectCard>
+                ))}
+              </div>
             </div>
           </div>
         </section>
 
         {/* Skills & Technologies Section */}
         <section className='bg-indigo-400'>
-          <div className='max-w-7xl w-full mx-auto  h-[600px]'>
-            <div className='flex flex-col'>
-              <h1 className='text-4xl font-medium text-slate-800 px-16 py-8'>Skills & Technologies</h1>
-              <div className='px-16 py-8'>Skills here</div>
+          <div className='max-w-7xl w-full mx-auto'>
+            <div className='flex flex-col py-16'>
+              <h1 className='text-4xl font-medium text-slate-800 px-16'>Skills & Technologies</h1>
+              <div className='px-16 flex flex-wrap mx-auto mt-16 gap-y-8 gap-x-8 justify-center'>
+                {skills.map((skill) => (
+                  <Skill {...skill}></Skill>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -43,11 +55,11 @@ function App() {
 
         {/* Contact*/}
         <section className='bg-indigo-300'>
-          <div className='max-w-7xl w-full mx-auto  h-[400px]'>
-            <div className='flex flex-col'>
-              <h1 className='text-4xl font-medium text-slate-800 px-16 py-8'>Contact Me</h1>
+          <div className='max-w-7xl w-full mx-auto'>
+            <div className='flex flex-col py-16'>
+              <h1 className='text-4xl font-medium text-slate-800 px-16'>Contact Me</h1>
 
-              <h2 className='text-center text-2xl font-medium text-slate-500'>Send me a Message!</h2>
+              <h2 className='text-center text-3xl font-light text-slate-500 mt-8'>Send me a Message!</h2>
               <div className='px-16 py-8 flex flex-wrap gap-x-4 gap-y-4 justify-center'>
 
                 {contacts.map((contact) => (

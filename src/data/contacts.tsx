@@ -6,19 +6,19 @@ import { HiOutlineMail } from 'react-icons/hi';
 
 const contacts: IContactCard[] = [
     {
-        icon: <FaGithub size={28} className="text-slate-500 group-hover:text-white" />,
+        icon: <FaGithub size={28} className="text-indigo-500 group-hover:text-white" />,
         label: "GitHub"
     },
     {
-        icon: <FaInstagram size={28} className="text-slate-500 group-hover:text-white" />,
+        icon: <FaInstagram size={28} className="text-indigo-500 group-hover:text-white" />,
         label: "Instagram"
     },
     {
-        icon: <FaFacebookMessenger size={28} className="text-slate-500 group-hover:text-white" />,
+        icon: <FaFacebookMessenger size={28} className="text-indigo-500 group-hover:text-white" />,
         label: "Messenger"
     },
     {
-        icon: <HiOutlineMail size={28} className="text-slate-500 group-hover:text-white" />,
+        icon: <HiOutlineMail size={28} className="text-indigo-500 group-hover:text-white" />,
         label: "Mail"
     },
 ]
