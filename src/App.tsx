@@ -66,13 +66,7 @@ function App() {
               </motion.div>
               <div className="px-16 flex flex-wrap justify-center mt-8">
                 {projects.map((project) => (
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0 }}
-                    whileInView={{ opacity: 10, scale: 1 }}
-                    viewport={{ once: true }}
-                  >
-                    <ProjectCard {...project}></ProjectCard>
-                  </motion.div>
+                  <ProjectCard {...project}></ProjectCard>
                 ))}
               </div>
             </div>
