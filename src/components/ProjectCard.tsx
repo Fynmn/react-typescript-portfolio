@@ -4,7 +4,7 @@ export interface IProjectCard {
   title: string;
   description: string;
   imgUrl: string;
-  tags: string;
+  tags: string[];
 }
 
 const ProjectCard: React.FC<IProjectCard> = ({
