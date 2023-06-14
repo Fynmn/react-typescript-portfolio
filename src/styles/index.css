@@ -1,3 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tippy-box[data-theme~="primary"] {
+  background-color: beige;
+  color: dimgray;
+  background: beige;
+  border: 1px solid beige;
+  fill: beige;
+}
+
+.tippy-box[data-theme~="primary"][data-placement^="top"]
+  > .tippy-arrow::before {
+  border-top-color: beige;
+}
+.tippy-box[data-theme~="primary"][data-placement^="bottom"]
+  > .tippy-arrow::before {
+  border-bottom-color: beige;
+}
+.tippy-box[data-theme~="primary"][data-placement^="left"]
+  > .tippy-arrow::before {
+  border-left-color: beige;
+}
+.tippy-box[data-theme~="primary"][data-placement^="right"]
+  > .tippy-arrow::before {
+  border-right-color: beige;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}
+
+/* .scrolling-text {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-text div {
+  display: inline-block;
+  animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */

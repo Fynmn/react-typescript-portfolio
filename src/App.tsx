@@ -1,19 +1,38 @@
-import contacts from "./data/contacts";
-import projects from "./data/projects";
-import ContactCard from "./components/ContactCard";
-import ProjectCard from "./components/ProjectCard";
-import Skill from "./components/Skills";
-import skills from "./data/skills";
+import { useInView } from "react-intersection-observer";
 
 import { motion, useScroll } from "framer-motion";
+import Introduction from "./components/sections/Introduction";
+import Nav from "./components/Nav";
+import Projects from "./components/sections/Projects";
+import Skills from "./components/sections/Skills";
+import Awards from "./components/sections/Awards";
+import Footer from "./components/sections/Footer";
 
 function App() {
   const { scrollYProgress } = useScroll();
+  const [introductionRef, introductionRefInView] = useInView();
+
   return (
     <>
-      <div className="flex flex-col w-full bg-slate-600 min-h-screen">
+      <motion.div
+        className="bg-yellow-700 h-2 top-0 left-0 right-0 origin-left fixed z-10 w-screen"
+        style={{ scaleX: scrollYProgress }}
+      />
+      <div className="flex flex-col w-full bg-white min-h-screen">
+        <Nav></Nav>
+        <Introduction></Introduction>
+        <Projects></Projects>
+        <Skills></Skills>
+        <Awards></Awards>
+        <Footer></Footer>
+        {/* <ProjectCard
+          title={"Lol"}
+          description={"hi"}
+          imgUrl={"wolrd"}
+          tags={["test"]}
+        /> */}
         {/* Introduction Section */}
-        <section className="bg-indigo-400">
+        {/* <section className="bg-indigo-400">
           <div className="max-w-7xl w-full mx-auto flex items-center justify-center h-[600px]">
             <div className="flex">
               <div className="flex flex-col items-center">
@@ -48,11 +67,9 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
-
+        </section> */}
         {/* Portfolio Section */}
-
-        <section className="bg-indigo-300">
+        {/* <section className="bg-indigo-300">
           <div className="max-w-7xl w-full mx-auto">
             <div className="flex flex-col py-16">
               <motion.div
@@ -71,10 +88,9 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
-
+        </section> */}
         {/* Skills & Technologies Section */}
-        <section className="bg-indigo-400">
+        {/* <section className="bg-indigo-400">
           <div className="max-w-7xl w-full mx-auto">
             <div className="flex flex-col py-16">
               <h1 className="text-4xl font-medium text-slate-800 px-16">
@@ -87,27 +103,26 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
-
-        {/* Contact*/}
-        <section className="bg-indigo-300">
+        </section> */}
+        {/* Footer*/}
+        {/* <section className="bg-indigo-300">
           <div className="max-w-7xl w-full mx-auto">
             <div className="flex flex-col py-16">
               <h1 className="text-4xl font-medium text-slate-800 px-16">
-                Contact Me
+                Footer Me
               </h1>
 
               <h2 className="text-center text-3xl font-light text-slate-500 mt-8">
                 Send me a Message!
               </h2>
               <div className="px-16 py-8 flex flex-wrap gap-x-4 gap-y-4 justify-center">
-                {contacts.map((contact) => (
-                  <ContactCard {...contact}></ContactCard>
+                {Footers.map((Footer) => (
+                  <FooterCard {...Footer}></FooterCard>
                 ))}
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </>
   );
