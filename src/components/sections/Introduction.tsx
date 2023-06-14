@@ -30,7 +30,7 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
         <div className="w-60 h-60 sm:w-80 sm:h-80">
           <div className="relative w-full h-full">
             <img
-              src="../../../public/assets/img/Profile.png"
+              src="/assets/img/Profile.png"
               alt=""
               className="absolute object-cover w-full h-full "
             />
