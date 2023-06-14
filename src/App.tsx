@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <motion.div
-        className="bg-yellow-700 h-2 top-0 left-0 right-0 origin-left fixed z-10 w-screen"
+        className="bg-yellow-700 h-1 top-0 left-0 right-0 origin-left fixed z-10 w-screen"
         style={{ scaleX: scrollYProgress }}
       />
       <div className="flex flex-col w-full bg-white min-h-screen">

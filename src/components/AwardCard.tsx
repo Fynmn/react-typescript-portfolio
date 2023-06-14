@@ -35,24 +35,24 @@ const AwardCard: React.FC<IAwardCard> = ({
             <div className="flex flex-col gap-y-2 items-start ">
               {others ? (
                 <span className="flex items-center">
-                  <p className="text-yellow-500 font-bold mr-1">{placement}</p>
-                  <p className="text-yellow-500 font-light text-xs mr-1 mt-1">
+                  <p className="text-yellow-900 font-bold mr-1">{placement}</p>
+                  <p className="text-yellow-900 font-light text-xs mr-1 mt-1">
                     {" "}
                     -{" "}
                   </p>
-                  <p className="text-yellow-500 font-light text-xs mt-1">
+                  <p className="text-yellow-900 font-light text-xs mt-1">
                     {others}
                   </p>
                 </span>
               ) : (
                 <span className="flex items-center">
-                  <p className="text-yellow-500 font-bold mr-1">{placement}</p>
+                  <p className="text-yellow-900 font-bold mr-1">{placement}</p>
                 </span>
               )}
-              <p className="text-yellow-500 font-semibold text-sm text-start">
+              <p className="text-yellow-900 font-semibold text-sm text-start">
                 {title}
               </p>
-              <p className="text-yellow-500 font-light text-sm">{date}</p>
+              <p className="text-yellow-900 font-light text-sm">{date}</p>
             </div>
           </div>
         </FlatShadowCard>
