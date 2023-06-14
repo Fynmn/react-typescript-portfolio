@@ -8,8 +8,66 @@ const awards: IAwardCard[] = [
         src="assets/img/psc_regional_cert.jpg"
       ></img>
     ),
-    placement: "Champion",
+    placement: "Magna Cum Laude",
+    others: "1.25 GWA",
+    title: "West Visayas State University - CICT - BS Computer Science",
+    date: "June 5, 2023",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-cover w-full h-full"
+        src="assets/img/psc_regional_cert.jpg"
+      ></img>
+    ),
+    placement: "Best Thesis",
+    title: "Computer Science (West Visayas State University - College of ICT)",
+    date: "June 1, 2023",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-cover w-full h-full"
+        src="assets/img/psc_regional_cert.jpg"
+      ></img>
+    ),
+    placement: "With High Distinction",
+    others: "1.25 GWA",
+    title: "West Visayas State University - CICT - BS Computer Science",
+    date: "June 1, 2023",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-cover w-full h-full"
+        src="assets/img/psc_regional_cert.jpg"
+      ></img>
+    ),
+    placement: "Regional Champion",
+    others: "out of 32 Teams",
     title: "Philippine Startup Challenge 7 - Regional Pitching Competition",
+    date: "October 28, 2022",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-cover w-full h-full"
+        src="assets/img/psc_regional_cert.jpg"
+      ></img>
+    ),
+    placement: "Top 10",
+    title: "Philippine Startup Challenge 7 - National Pitching Competition",
+    date: "November 1, 2022",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-cover w-full h-full"
+        src="assets/img/psc_regional_cert.jpg"
+      ></img>
+    ),
+    placement: "Presenter",
+    title: "2023 Fair on Innovation, Reserach and Extension Services",
     date: "June 1, 2022",
   },
   {
@@ -19,8 +77,19 @@ const awards: IAwardCard[] = [
         src="assets/img/psc_regional_cert.jpg"
       ></img>
     ),
-    placement: "Champion",
-    title: "Philippine Startup Challenge 7 - Regional Pitching Competition",
+    placement: "Best Project Presentation",
+    title: "On-the-job Training Final Project Presentation",
+    date: "May 5, 2023",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-cover w-full h-full"
+        src="assets/img/psc_regional_cert.jpg"
+      ></img>
+    ),
+    placement: "Gold Medalist",
+    title: "College of ICT - BS Computer Science (Academic Year [])",
     date: "June 1, 2022",
   },
   {
@@ -30,8 +99,8 @@ const awards: IAwardCard[] = [
         src="assets/img/psc_regional_cert.jpg"
       ></img>
     ),
-    placement: "Champion",
-    title: "Philippine Startup Challenge 7 - Regional Pitching Competition",
+    placement: "Gold Medalist",
+    title: "College of ICT - BS Computer Science (Academic Year [])",
     date: "June 1, 2022",
   },
   {
@@ -41,8 +110,8 @@ const awards: IAwardCard[] = [
         src="assets/img/psc_regional_cert.jpg"
       ></img>
     ),
-    placement: "Champion",
-    title: "Philippine Startup Challenge 7 - Regional Pitching Competition",
+    placement: "Silver Medalist",
+    title: "College of ICT - BS Computer Science (Academic Year [])",
     date: "June 1, 2022",
   },
   {
@@ -52,19 +121,8 @@ const awards: IAwardCard[] = [
         src="assets/img/psc_regional_cert.jpg"
       ></img>
     ),
-    placement: "Champion",
-    title: "Philippine Startup Challenge 7 - Regional Pitching Competition",
-    date: "June 1, 2022",
-  },
-  {
-    icon: (
-      <img
-        className="absolute object-cover w-full h-full"
-        src="assets/img/psc_regional_cert.jpg"
-      ></img>
-    ),
-    placement: "Champion",
-    title: "Philippine Startup Challenge 7 - Regional Pitching Competition",
+    placement: "Silver Medalist",
+    title: "College of ICT - BS Computer Science (Academic Year [])",
     date: "June 1, 2022",
   },
 ];
