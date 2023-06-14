@@ -72,6 +72,7 @@ const Awards: React.FC<AwardsProps> = ({ sectionRef }) => {
                   title={award.title}
                   placement={award.placement}
                   date={award.date}
+                  others={award?.others}
                 />
               </motion.span>
             ))}
