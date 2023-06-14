@@ -48,7 +48,7 @@ const Skills: React.FC<SkillsProps> = ({ sectionRef }) => {
         </Marquee>
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center m-4">
         <motion.a
           whileHover={{ scale: 1.2 }}
           onHoverStart={(e) => {}}
