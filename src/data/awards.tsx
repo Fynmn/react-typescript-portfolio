@@ -33,7 +33,7 @@ const awards: IAwardCard[] = [
     ),
     placement: "With High Distinction",
     others: "1.25 GWA",
-    title: "West Visayas State University - CICT - BS Computer Science",
+    title: "West Visayas State University - CICT. - BS Computer Science",
     date: "June 1, 2023",
   },
   {
@@ -78,7 +78,7 @@ const awards: IAwardCard[] = [
       ></img>
     ),
     placement: "Best Project Presentation",
-    title: "On-the-job Training Final Project Presentation",
+    title: "On-the-Job Training Final Project Presentation",
     date: "May 5, 2023",
   },
   {
@@ -89,7 +89,7 @@ const awards: IAwardCard[] = [
       ></img>
     ),
     placement: "Gold Medalist",
-    title: "College of ICT - BS Computer Science (Academic Year [])",
+    title: "College of ICT - BS Computer Science (1st Year)",
     date: "June 1, 2022",
   },
   {
@@ -100,7 +100,7 @@ const awards: IAwardCard[] = [
       ></img>
     ),
     placement: "Gold Medalist",
-    title: "College of ICT - BS Computer Science (Academic Year [])",
+    title: "College of ICT - BS Computer Science (2nd Year)",
     date: "June 1, 2022",
   },
   {
@@ -111,7 +111,7 @@ const awards: IAwardCard[] = [
       ></img>
     ),
     placement: "Silver Medalist",
-    title: "College of ICT - BS Computer Science (Academic Year [])",
+    title: "College of ICT - BS Computer Science (3rd Year)",
     date: "June 1, 2022",
   },
   {
@@ -122,7 +122,7 @@ const awards: IAwardCard[] = [
       ></img>
     ),
     placement: "Silver Medalist",
-    title: "College of ICT - BS Computer Science (Academic Year [])",
+    title: "College of ICT - BS Computer Science (4th Year)",
     date: "June 1, 2022",
   },
 ];
