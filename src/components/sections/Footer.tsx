@@ -13,7 +13,7 @@ import { Link } from "react-scroll";
 import clipboardCopy from "clipboard-copy";
 import toast from "react-hot-toast";
 import FlatShadowCard from "../FlatShadowCard";
-
+import { GiRoundStar } from "react-icons/gi";
 import { FaRegCopy } from "react-icons/fa";
 
 interface FooterProps extends SectionProps {}
@@ -80,7 +80,7 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
           }`}
           />
         </div>
-        <div className="flex flex-col gap-y-8 ">
+        <div className="flex flex-col gap-y-8">
           <div className="flex justify-center gap-x-4 sm:gap-x-8">
             {contacts.map((contact, i) => (
               <motion.div
@@ -97,15 +97,28 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
               </motion.div>
             ))}
           </div>
-          <div className="flex justify-center">
+          <div className="flex flex-col justify-center items-center gap-y-4">
             <button
               onClick={handleCopyEmail}
               className="underline text-lg sm:text-2xl text-white hover:bg-yellow-500"
             >
               nataliejane.pacificar@outlook.com
             </button>
+            <a
+              href="https://github.com/Fynmn/react-typescript-portfolio"
+              target="_blank"
+            >
+              <span className="flex items-center gap-x-1 justify-center hover:text-yellow-400 active:animate-ping">
+                Give this portfolio a{" "}
+                <span className="text-yellow-400">
+                  <GiRoundStar />
+                </span>
+                on GitHub, you amazing hooman 😎
+              </span>
+            </a>
           </div>
-          <span className="flex flex-wrap justify-center px-16 items-center mt-8">
+
+          <span className="flex flex-wrap justify-center px-16 items-center">
             <p className="mr-1">Copyright</p>
             <p className="text-2xl pb-1 mr-1 flex">©</p>
             <p className="mr-1">2023 Natalie Jane Pacificar.</p>
