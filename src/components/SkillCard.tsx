@@ -4,7 +4,7 @@ import { cx } from "../utils/cx";
 export interface ISkillCard {
   icon: ReactNode;
   label: string;
-  seeAll: boolean;
+  seeAll?: boolean;
 }
 
 const SkillCard: React.FC<ISkillCard> = ({ icon, label, seeAll }) => {
