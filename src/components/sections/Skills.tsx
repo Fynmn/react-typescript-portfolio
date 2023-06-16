@@ -1,10 +1,10 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import skills from "@/data/skills";
 import { SectionProps } from "./types";
 import SkillCard from "../SkillCard";
 // import { Profile } from '../../../public/assets/img/Profile.png';
 import Marquee from "react-fast-marquee";
-import { RxDoubleArrowDown } from "react-icons/rx";
+import { RxDoubleArrowDown, RxDoubleArrowUp } from "react-icons/rx";
 import { motion } from "framer-motion";
 import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css";
@@ -13,6 +13,7 @@ interface SkillsProps extends SectionProps {}
 
 const Skills: React.FC<SkillsProps> = ({ sectionRef }) => {
   const buttonRef = useRef(null);
+  const [seeAll, setSeeAll] = useState<boolean>(false);
 
   useEffect(() => {
     if (buttonRef.current) {
@@ -35,17 +36,45 @@ const Skills: React.FC<SkillsProps> = ({ sectionRef }) => {
       <h1 className="text-yellow-700 text-4xl sm:text-5xl font-semibold text-center py-16 px-16">
         Skills & Technologies
       </h1>
+
       <div className="flex items-start justify-start">
-        <Marquee
-          gradient={false}
-          speed={40}
-          direction="left"
-          pauseOnHover={false}
-        >
-          {skills.map((skill) => (
-            <SkillCard icon={skill.icon} label={skill.label}></SkillCard>
-          ))}
-        </Marquee>
+        {!seeAll ? (
+          <Marquee
+            gradient={false}
+            speed={40}
+            direction="left"
+            pauseOnHover={false}
+          >
+            {skills.map((skill, i) => (
+              <SkillCard
+                key={i}
+                icon={skill.icon}
+                label={skill.label}
+                seeAll={seeAll}
+              ></SkillCard>
+            ))}
+          </Marquee>
+        ) : (
+          <div className="flex flex-wrap sm:px-16 md:sm:px-32 justify-center">
+            {skills.map((skill, i) => (
+              <motion.div
+                key={i}
+                initial={{ x: i % 2 === 0 ? -100 : 100 }}
+                animate={{ x: 0 }}
+                transition={{ duration: 0.5 }}
+                style={{ display: "inline-block" }}
+                whileHover={{ scale: 1.1 }}
+              >
+                <SkillCard
+                  key={i}
+                  icon={skill.icon}
+                  label={skill.label}
+                  seeAll={seeAll}
+                />
+              </motion.div>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="flex justify-center m-4">
@@ -56,12 +85,12 @@ const Skills: React.FC<SkillsProps> = ({ sectionRef }) => {
         >
           <button
             ref={buttonRef}
+            onClick={() => {
+              setSeeAll(!seeAll);
+            }}
             className="group hover:bg-yellow-500 hover:text-white flex flex-col items-center text-yellow-500 gap-y-4 p-6 rounded-full"
           >
-            {/* <button
-    ref={buttonRef}
-    className="group hover:bg-yellow-500 hover:animate-ping flex flex-col items-center text-yellow-500 gap-y-4 p-6 rounded-full"
-  > */}
+            {seeAll ? <RxDoubleArrowUp></RxDoubleArrowUp> : <></>}
             <motion.div
               initial={{ y: 0 }}
               animate={{ y: [0, -12, 0] }} // Animate the y position from 0 to -20 and back to 0
@@ -73,10 +102,10 @@ const Skills: React.FC<SkillsProps> = ({ sectionRef }) => {
               }}
             >
               <h1 className="text-sm group-hover:animate-text_color_animation">
-                Click me
+                {!seeAll ? "Click Me" : "Collapse"}
               </h1>
             </motion.div>
-            <RxDoubleArrowDown></RxDoubleArrowDown>
+            {!seeAll ? <RxDoubleArrowDown></RxDoubleArrowDown> : <></>}
           </button>
         </motion.a>
       </div>
