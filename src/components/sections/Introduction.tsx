@@ -71,7 +71,7 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
 
             <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -right-16 bottom-20 md:bottom-32 sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
               <p className="text-[10px] sm:text-sm font-semibold text-yellow-950">
-                Data Analytics with Python
+                Data Science with Python
               </p>
             </div>
 
