@@ -11,7 +11,7 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
     <section
       id="introduction-section"
       ref={sectionRef}
-      className="max-w-7xl w-full mx-auto flex items-center justify-center py-32 md:py-24"
+      className="max-w-7xl w-full mx-auto flex items-center justify-center py-12 md:py-24 min-h-screen"
     >
       <ParticlesBackground />
       <div className="relative flex gap-x-16 flex-wrap justify-center items-center gap-y-8 py-8 md:px-16">
