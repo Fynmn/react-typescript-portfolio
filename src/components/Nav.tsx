@@ -3,8 +3,6 @@ import SectionLink from "./SectionLink";
 import sections from "../data/sections";
 
 import { motion, Variants } from "framer-motion";
-import FlatShadowCard from "./FlatShadowCard";
-import DownloadButton from "./DownloadButton";
 
 const navVariants: Variants = {
   hidden: {
@@ -63,13 +61,6 @@ const Nav = () => {
                   </motion.span>
                 ))}
               </>
-              {/* <div className="hover:scale-110">
-              <FlatShadowCard>
-                <button className="px-4 py-2 text-yellow-900">
-                  Download CV
-                </button>
-              </FlatShadowCard>
-            </div> */}
             </div>
           </div>
         </div>
