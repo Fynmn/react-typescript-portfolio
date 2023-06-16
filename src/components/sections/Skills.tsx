@@ -12,18 +12,30 @@ import "tippy.js/dist/tippy.css";
 interface SkillsProps extends SectionProps {}
 
 const Skills: React.FC<SkillsProps> = ({ sectionRef }) => {
-  const buttonRef = useRef(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const [seeAll, setSeeAll] = useState<boolean>(false);
 
   useEffect(() => {
-    if (buttonRef.current) {
-      tippy(buttonRef.current, {
+    const button = buttonRef.current;
+
+    if (button) {
+      const tooltip = tippy(button, {
         content: "See all my skills",
         placement: "right",
         trigger: "mouseenter",
         theme: "primary",
-        // arrow: false,
       });
+
+      const handleClick = () => {
+        tooltip.hide(); // Hide the tooltip when the button is clicked
+      };
+
+      button.addEventListener("click", handleClick);
+
+      return () => {
+        button.removeEventListener("click", handleClick);
+        tooltip.destroy(); // Cleanup Tippy.js when the component unmounts
+      };
     }
   }, []);
 
