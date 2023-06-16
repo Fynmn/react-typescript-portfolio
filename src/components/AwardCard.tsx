@@ -19,7 +19,7 @@ const AwardCard: React.FC<IAwardCard> = ({
 }) => {
   return (
     <>
-      <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
         <FlatShadowCard
           interactivity={{
             flatOnMouseDown: true,
@@ -56,7 +56,7 @@ const AwardCard: React.FC<IAwardCard> = ({
             </div>
           </div>
         </FlatShadowCard>
-      </motion.button>
+      </motion.div>
     </>
   );
 };

@@ -58,7 +58,10 @@ const ProjectCard: React.FC<IProjectCard> = ({
               {type}
             </span>
             {tags.map((tag, i) => (
-              <span className="bg-yellow-500 text-yellow-100 text-xs mr-2 px-2.5 py-0.5 rounded">
+              <span
+                key={i}
+                className="bg-yellow-500 text-yellow-100 text-xs mr-2 px-2.5 py-0.5 rounded"
+              >
                 {tag}
               </span>
             ))}

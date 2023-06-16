@@ -12,7 +12,7 @@ const sections = [
     href: "awards-section",
   },
   {
-    name: "Contact",
+    name: "Where to Find Me?",
     href: "contact-section",
   },
 ];
