@@ -11,7 +11,7 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
     <section
       id="introduction-section"
       ref={sectionRef}
-      className="max-w-7xl w-full mx-auto flex items-center justify-center py-32"
+      className="max-w-7xl w-full mx-auto flex items-center justify-center py-32 md:py-24"
     >
       <ParticlesBackground />
       <div className="relative flex gap-x-16 flex-wrap justify-center items-center gap-y-8 py-8 md:px-16">
@@ -46,7 +46,7 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
               Typescript and more. I also do Design and Data Analytics too!
             </p> */}
           </div>
-          <div className="flex sm:justify-center md:justify-end py-1">
+          <div className="flex justify-center md:justify-end py-1">
             <DownloadButton
               btnText="Download CV"
               pdfUrl="assets/files/CV.pdf"
