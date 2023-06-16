@@ -59,7 +59,7 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
             <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -left-10 bottom-9 md:bottom-[72px] sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
               {/* <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-6 py-6 -left-10 bottom-12"> */}
               <p className="text-[10px] sm:text-sm font-semibold text-yellow-950">
-                design with figma
+                Design with Figma
               </p>
               {/* <div className="flex flex-col relative h-12 w-12">
                 <img
@@ -71,13 +71,13 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
 
             <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -right-16 bottom-20 md:bottom-32 sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
               <p className="text-[10px] sm:text-sm font-semibold text-yellow-950">
-                data analytics with python
+                Data Analytics with Python
               </p>
             </div>
 
             <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -right-12 sm:-right-24 -bottom-7 md:bottom-3 sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
               <p className="text-[10px] sm:text-sm font-semibold text-yellow-950">
-                web apps with react, nextjs, flask and more
+                Web apps with React, Next.js, Flask and more
               </p>
             </div>
 
