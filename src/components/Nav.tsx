@@ -3,6 +3,8 @@ import SectionLink from "./SectionLink";
 import sections from "../data/sections";
 
 import { motion, Variants } from "framer-motion";
+import FlatShadowCard from "./FlatShadowCard";
+import DownloadButton from "./DownloadButton";
 
 const navVariants: Variants = {
   hidden: {
@@ -41,20 +43,34 @@ const Nav = () => {
       animate="visible"
       className="h-24 w-full z-30 absolute"
     >
-      <div className="relative flex items-center justify-end h-full max-w-7xl mx-auto ">
-        <div className="flex space-x-10 px-20">
-          <div className="text-sm text-white-600 hidden lg:flex space-x-10 items-center">
-            <>
-              {sections.map((section, i) => (
-                <motion.span
-                  variants={navChildVariants}
-                  key={i}
-                  className="block"
-                >
-                  <SectionLink href={section.href}>{section.name}</SectionLink>
-                </motion.span>
-              ))}
-            </>
+      <div className="relative h-full max-w-7xl mx-auto flex items-center justify-end">
+        {/* <div className="px-16 flex flex-1 invisible lg:visible ">
+          <DownloadButton btnText="Download CV" pdfUrl="assets/files/CV.pdf" />
+        </div> */}
+        <div className="">
+          <div className="flex space-x-10 px-20">
+            <div className="text-sm text-white-600 hidden lg:flex space-x-10 items-center">
+              <>
+                {sections.map((section, i) => (
+                  <motion.span
+                    variants={navChildVariants}
+                    key={i}
+                    className="block"
+                  >
+                    <SectionLink href={section.href}>
+                      {section.name}
+                    </SectionLink>
+                  </motion.span>
+                ))}
+              </>
+              {/* <div className="hover:scale-110">
+              <FlatShadowCard>
+                <button className="px-4 py-2 text-yellow-900">
+                  Download CV
+                </button>
+              </FlatShadowCard>
+            </div> */}
+            </div>
           </div>
         </div>
       </div>
