@@ -2,7 +2,6 @@ import skills from "@/data/skills";
 import { SectionProps } from "./types";
 import SkillCard from "../SkillCard";
 // import { Profile } from '../../../public/assets/img/Profile.png';
-import Marquee from "react-fast-marquee";
 import { RxDoubleArrowDown } from "react-icons/rx";
 import { motion } from "framer-motion";
 import contacts from "@/data/contacts";
@@ -11,6 +10,11 @@ import { useEffect, useRef } from "react";
 import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css";
 import { Link } from "react-scroll";
+import clipboardCopy from "clipboard-copy";
+import toast from "react-hot-toast";
+import FlatShadowCard from "../FlatShadowCard";
+
+import { FaRegCopy } from "react-icons/fa";
 
 interface FooterProps extends SectionProps {}
 
@@ -28,6 +32,23 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
       });
     }
   }, []);
+
+  const handleCopyEmail = () => {
+    clipboardCopy("nataliejane.pacificar@outlook.com");
+    // toast.success("Copied 'nataliejane.pacificar@outlook.com'");
+    toast.custom((t) => (
+      <FlatShadowCard
+        className={`${
+          t.visible
+            ? "animate-enter px-4 py-2 text-yellow-900 flex gap-x-1 items-center"
+            : "animate-leave px-4 py-2 text-yellow-900 flex gap-x-1 items-center"
+        }`}
+      >
+        <FaRegCopy />
+        <p> Copied 'nataliejane.pacificar@outlook.com'</p>
+      </FlatShadowCard>
+    ));
+  };
 
   return (
     <section
@@ -61,24 +82,28 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
         </div>
         <div className="flex flex-col gap-y-8 ">
           <div className="flex justify-center gap-x-4 sm:gap-x-8">
-            {contacts.map((contact) => (
-              <motion.a
+            {contacts.map((contact, i) => (
+              <motion.div
+                key={i}
                 whileHover={{ scale: 1.2 }}
-                onHoverStart={(e) => {}}
-                onHoverEnd={(e) => {}}
+                onHoverStart={(e: any) => {}}
+                onHoverEnd={(e: any) => {}}
               >
                 <ContactCard
                   icon={contact.icon}
                   label={contact.label}
                   link={contact.link}
                 />
-              </motion.a>
+              </motion.div>
             ))}
           </div>
-          <div>
-            <p className="underline text-lg sm:text-2xl text-white text-center">
+          <div className="flex justify-center">
+            <button
+              onClick={handleCopyEmail}
+              className="underline text-lg sm:text-2xl text-white hover:bg-yellow-500"
+            >
               nataliejane.pacificar@outlook.com
-            </p>
+            </button>
           </div>
           <span className="flex flex-wrap justify-center px-16 items-center mt-8">
             <p className="mr-1">Copyright</p>
