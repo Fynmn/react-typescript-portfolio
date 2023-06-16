@@ -58,7 +58,7 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
     >
       <div className="bg-yellow-700 text-white pb-16 mt-32 flex flex-col">
         <div
-          className="relative h-20 w-20 mx-auto mb-8 mt-4 hover:-top-2 group"
+          className="relative h-20 w-20 mx-auto mb-8 mt-4 hover:-top-2 group active:scale-90"
           ref={buttonRef}
         >
           <button className="">
@@ -88,6 +88,7 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
                 whileHover={{ scale: 1.2 }}
                 onHoverStart={(e: any) => {}}
                 onHoverEnd={(e: any) => {}}
+                whileTap={{ scale: 0.9 }}
               >
                 <ContactCard
                   icon={contact.icon}
@@ -100,7 +101,7 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
           <div className="flex flex-col justify-center items-center gap-y-4">
             <button
               onClick={handleCopyEmail}
-              className="underline text-lg sm:text-2xl text-white hover:bg-yellow-500"
+              className="underline text-lg sm:text-2xl text-white hover:bg-yellow-500 active:scale-90"
             >
               nataliejane.pacificar@outlook.com
             </button>
