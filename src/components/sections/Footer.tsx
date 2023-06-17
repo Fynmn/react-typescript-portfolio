@@ -37,16 +37,18 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
     clipboardCopy("nataliejane.pacificar@outlook.com");
     // toast.success("Copied 'nataliejane.pacificar@outlook.com'");
     toast.custom((t) => (
-      <FlatShadowCard
-        className={`${
-          t.visible
-            ? "animate-enter px-4 py-2 text-yellow-900 flex gap-x-1 items-center"
-            : "animate-leave px-4 py-2 text-yellow-900 flex gap-x-1 items-center"
-        }`}
-      >
-        <FaRegCopy />
-        <p> Copied 'nataliejane.pacificar@outlook.com'</p>
-      </FlatShadowCard>
+      <div className={`${t.visible ? "animate-enter" : "animate-exit"}`}>
+        <FlatShadowCard
+          className={`${
+            t.visible
+              ? "px-4 py-2 text-yellow-900 flex gap-x-1 items-center"
+              : "px-4 py-2 text-yellow-900 flex gap-x-1 items-center"
+          }`}
+        >
+          <FaRegCopy />
+          <p> Copied 'nataliejane.pacificar@outlook.com'</p>
+        </FlatShadowCard>
+      </div>
     ));
   };
 

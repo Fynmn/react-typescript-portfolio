@@ -120,6 +120,45 @@
   opacity: 0.8;
 }
 
+/* Enter animation */
+@keyframes toast-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Exit animation */
+@keyframes toast-exit {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+/* Apply enter and exit animation */
+.animate-enter {
+  animation-name: toast-enter;
+  animation-duration: 300ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.animate-exit {
+  animation-name: toast-exit;
+  animation-duration: 300ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
 /* .scrolling-text {
   overflow: hidden;
   white-space: nowrap;
