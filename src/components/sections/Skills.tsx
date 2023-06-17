@@ -15,29 +15,29 @@ const Skills: React.FC<SkillsProps> = ({ sectionRef }) => {
   const buttonRef = useRef<HTMLButtonElement>(null);
   const [seeAll, setSeeAll] = useState<boolean>(false);
 
-  useEffect(() => {
-    const button = buttonRef.current;
+  // useEffect(() => {
+  //   const button = buttonRef.current;
 
-    if (button) {
-      const tooltip = tippy(button, {
-        content: "See all my skills",
-        placement: "right",
-        trigger: "mouseenter",
-        theme: "primary",
-      });
+  //   if (button) {
+  //     const tooltip = tippy(button, {
+  //       content: "See all my skills",
+  //       placement: "right",
+  //       trigger: "mouseenter",
+  //       theme: "primary",
+  //     });
 
-      const handleClick = () => {
-        tooltip.hide(); // Hide the tooltip when the button is clicked
-      };
+  //     const handleClick = () => {
+  //       tooltip.hide(); // Hide the tooltip when the button is clicked
+  //     };
 
-      button.addEventListener("click", handleClick);
+  //     button.addEventListener("click", handleClick);
 
-      return () => {
-        button.removeEventListener("click", handleClick);
-        tooltip.destroy(); // Cleanup Tippy.js when the component unmounts
-      };
-    }
-  }, []);
+  //     return () => {
+  //       button.removeEventListener("click", handleClick);
+  //       tooltip.destroy(); // Cleanup Tippy.js when the component unmounts
+  //     };
+  //   }
+  // }, []);
 
   return (
     <section
