@@ -30,7 +30,7 @@ const Projects: React.FC<ProjectsProps> = ({ sectionRef }) => {
           Projects
         </h1>
 
-        <div className="flex flex-wrap items-center justify-evenly mx-16 gap-y-8 sm:gap-y-4 md:gap-y-2 lg:gap-y-0 pb-16">
+        <div className="flex flex-wrap items-center justify-evenly mx-16 gap-y-8 sm:gap-y-4 md:gap-y-2 lg:gap-y-0 gap-x-8 pb-16">
           {projects.map((project, i) => (
             <ProjectCard
               key={i}
