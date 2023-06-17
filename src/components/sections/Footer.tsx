@@ -109,12 +109,12 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
               href="https://github.com/Fynmn/react-typescript-portfolio"
               target="_blank"
             >
-              <span className="flex items-center gap-x-1 justify-center hover:text-yellow-400 active:animate-ping">
-                Give this portfolio a{" "}
+              <span className="flex items-center gap-x-1 justify-center hover:text-yellow-400 active:animate-ping text-xs sm:text-base">
+                <p>Give this portfolio a</p>
                 <span className="text-yellow-400">
                   <GiRoundStar />
                 </span>
-                on GitHub, you amazing hooman 😎
+                <p>on GitHub, you amazing hooman 😎</p>
               </span>
             </a>
           </div>
