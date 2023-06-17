@@ -82,7 +82,9 @@ const Nav = () => {
               </div>
               <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
                 {sections.map((section, i) => (
-                  <SectionLink href={section.href}>{section.name}</SectionLink>
+                  <SectionLink key={i} href={section.href}>
+                    {section.name}
+                  </SectionLink>
                 ))}
               </ul>
             </div>
