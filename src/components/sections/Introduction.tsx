@@ -49,7 +49,7 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
           <div className="flex justify-center md:justify-end py-1">
             <DownloadButton
               btnText="Download CV"
-              pdfUrl="assets/files/CV.pdf"
+              pdfUrl="assets/files/CV_v2.pdf"
             />
           </div>
         </div>
