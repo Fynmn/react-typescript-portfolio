@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* For Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  width: 5px; /* Adjust the width as desired */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #eab308; /* Change the scrollbar thumb color */
+  border-radius: 50px;
+}
+
 .tippy-box[data-theme~="primary"] {
   background-color: beige;
   color: dimgray;
@@ -157,6 +167,27 @@
   animation-duration: 300ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  /* margin-left: 16px;
+  margin-right: 16px; */
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: 100;
+  color: #fff;
+  opacity: 1;
+  background-color: rgba(113, 63, 18, 0.2);
+  flex: auto;
+}
+
+.swiper-pagination-bullet-active {
+  font-weight: 600;
+  color: #fff;
+  background-color: #eab308;
 }
 
 /* .scrolling-text {
