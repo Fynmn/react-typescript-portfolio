@@ -9,6 +9,11 @@ const projects: IProjectCard[] = [
       "https://cdn.dribbble.com/userupload/2719744/file/original-7b44670833617cf55327818eb6bc84ce.png?crop=0x0-3201x2401&resize=400x0",
     type: "Development",
     tags: ["React", "Redux", "Node.js", "Express.js", "MongoDB"],
+    images: [
+      "https://picsum.photos/id/1018/1000/600/",
+      "https://picsum.photos/id/1015/1000/600/",
+      "https://picsum.photos/id/1019/1000/600/",
+    ],
   },
   {
     title: "Social Media App",
@@ -18,6 +23,11 @@ const projects: IProjectCard[] = [
       "https://cdn.dribbble.com/users/2547176/screenshots/15348170/media/1433f78530f2b5a8c9505fd6d699284f.png?compress=1&resize=800x600&vertical=top",
     type: "Development",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Socket.io"],
+    images: [
+      "https://picsum.photos/id/1018/1000/600/",
+      "https://picsum.photos/id/1015/1000/600/",
+      "https://picsum.photos/id/1019/1000/600/",
+    ],
   },
   {
     title: "Fitness Tracker",
@@ -27,6 +37,11 @@ const projects: IProjectCard[] = [
       "https://cdn.dribbble.com/userupload/4384272/file/original-b51c32bfcb4e7244d725bc362439980e.png?compress=1&resize=1024x768",
     type: "Development",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Chart.js"],
+    images: [
+      "https://picsum.photos/id/1018/1000/600/",
+      "https://picsum.photos/id/1015/1000/600/",
+      "https://picsum.photos/id/1019/1000/600/",
+    ],
   },
   {
     title: "Food Delivery App",
@@ -36,6 +51,11 @@ const projects: IProjectCard[] = [
       "https://cdn.dribbble.com/userupload/4511869/file/original-6c8445c7882017bad20592639a806356.png?compress=1&resize=1024x768",
     type: "Design",
     tags: ["React Native", "Node.js", "Express.js", "MongoDB", "Stripe"],
+    images: [
+      "https://picsum.photos/id/1018/1000/600/",
+      "https://picsum.photos/id/1015/1000/600/",
+      "https://picsum.photos/id/1019/1000/600/",
+    ],
   },
   {
     title: "Online Learning Platform",
@@ -45,6 +65,11 @@ const projects: IProjectCard[] = [
       "https://cdn.dribbble.com/userupload/4208343/file/original-dd0ee735d64e42fd63fbb81496c4d9b1.jpg?compress=1&resize=1024x768",
     type: "Design",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "GraphQL"],
+    images: [
+      "https://picsum.photos/id/1018/1000/600/",
+      "https://picsum.photos/id/1015/1000/600/",
+      "https://picsum.photos/id/1019/1000/600/",
+    ],
   },
   {
     title: "Real Estate Listing",
@@ -54,6 +79,11 @@ const projects: IProjectCard[] = [
       "https://cdn.dribbble.com/userupload/5779728/file/original-02887eee802d54333afb3aab085dcc73.png?compress=1&resize=1024x768",
     type: "Design",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Google Maps API"],
+    images: [
+      "https://picsum.photos/id/1018/1000/600/",
+      "https://picsum.photos/id/1015/1000/600/",
+      "https://picsum.photos/id/1019/1000/600/",
+    ],
   },
   {
     title: "Job Board",
@@ -63,6 +93,11 @@ const projects: IProjectCard[] = [
       "https://cdn.dribbble.com/userupload/5454629/file/original-6429af9e16d7b554437548da18b52c41.png?compress=1&resize=1024x768",
     type: "Data Analytics",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "AWS S3"],
+    images: [
+      "https://picsum.photos/id/1018/1000/600/",
+      "https://picsum.photos/id/1015/1000/600/",
+      "https://picsum.photos/id/1019/1000/600/",
+    ],
   },
 ];
 

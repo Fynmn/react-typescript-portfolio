@@ -11,6 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@headlessui/react": "^1.7.15",
     "@mui/material": "^5.12.0",
     "@popperjs/core": "^2.11.8",
     "@react-pdf/renderer": "^3.1.12",
@@ -30,6 +31,7 @@
     "react-scroll": "^1.8.9",
     "react-tippy": "^1.4.0",
     "react-tooltip": "^5.13.1",
+    "swiper": "^9.4.1",
     "tippy.js": "^6.3.7",
     "tsparticles": "^2.10.1",
     "tsparticles-engine": "^2.10.1"

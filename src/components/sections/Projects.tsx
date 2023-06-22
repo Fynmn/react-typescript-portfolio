@@ -39,6 +39,7 @@ const Projects: React.FC<ProjectsProps> = ({ sectionRef }) => {
               imgUrl={project.imgUrl}
               type={project.type}
               tags={project.tags}
+              images={project.images}
             />
           ))}
         </div>
