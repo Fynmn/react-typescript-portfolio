@@ -134,7 +134,7 @@ const projects: IProjectCard[] = [
   {
     title: "Machine Learning and Data Related Projects",
     description:
-      "I have trained several models in order to uncover interesting insights or to make predictions such as the following: (1) predict the hospital facility, equipment and specialist needed by an emergency patient with the patient's condition as inputs; (2) predict the sentiment of a review from the IMDB Dataset with Logistic Regression and Feature Extraction; (3) predict the digit of a handwritten number from 0-9 using a Random Forest Classier; (4) predict the employment in the Philippines with a Time-Series Analysis using Skforecast; (5) nd if there is an association with suicide rate and unemployment.",
+      "I have trained several models in order to uncover interesting insights or to make predictions such as the following: (1) predict the hospital facility, equipment and specialist needed by an emergency patient with the patient's condition as inputs; (2) predict the sentiment of a review from the IMDB Dataset with Logistic Regression and Feature Extraction; (3) predict the digit of a handwritten number from 0-9 using a Random Forest Classier; (4) predict the employment in the Philippines with a Time-Series Analysis using Skforecast; (5) find out if there is an association with suicide rate and unemployment.",
     imgUrl:
       "https://cdn.dribbble.com/userupload/5779728/file/original-02887eee802d54333afb3aab085dcc73.png?compress=1&resize=1024x768",
     type: "Data Science",
