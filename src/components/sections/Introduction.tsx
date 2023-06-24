@@ -47,8 +47,8 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
               Typescript and more. I also do Design and Data Analytics too!
             </p> */}
           </div>
-          <div className="flex justify-center md:justify-end items-center py-1 gap-x-4">
-            <div className="">
+          <div className="flex justify-center md:justify-end items-center py-1 gap-x-8">
+            <div className="hidden sm:block">
               <Link
                 to={"projects-section"}
                 smooth={true}
