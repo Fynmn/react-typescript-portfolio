@@ -2,13 +2,32 @@ import { IProjectCard } from "@/components/ProjectCard";
 
 const projects: IProjectCard[] = [
   {
-    title: "E-Commerce Website",
+    title: "Hospilink",
     description:
-      "An online store that allows users to buy and sell products. The website has features such as shopping cart, user authentication, product listing, product search, and payment gateway integration.",
+      "HospiLink is a web application that utilizes machine learning and Google Distance Matrix API to help EMTs transport the patient to the best suitable hospital in the shortest amount of time. I was a front-end developer who made the web app functional by rendering thedata, state management, form validation, form submission, crud operations and animations. I was also a machine learning engineer who developed the model for predicting the hospital facilities, equipment and specialists needed by the patient. I was also a microservice developer who used the exported model and developed an API so applications can make requests to the API for predictions.",
     imgUrl:
       "https://cdn.dribbble.com/userupload/2719744/file/original-7b44670833617cf55327818eb6bc84ce.png?crop=0x0-3201x2401&resize=400x0",
     type: "Development",
-    tags: ["React", "Redux", "Node.js", "Express.js", "MongoDB"],
+    link: "https://booored.vercel.app",
+    tags: [
+      "JavaScript",
+      "React",
+      "React Libraies",
+      "Next.js",
+      "Python",
+      "Flask",
+      "PHP",
+      "TailwindCSS",
+      "Git",
+      "GitHub",
+      "Postman",
+      "JupyterLab",
+      "Google Colab",
+      "Jira",
+      "Data Cleaning",
+      "Machine Learning",
+      "API Development",
+    ],
     images: [
       "https://picsum.photos/id/1018/1000/600/",
       "https://picsum.photos/id/1015/1000/600/",
@@ -16,13 +35,30 @@ const projects: IProjectCard[] = [
     ],
   },
   {
-    title: "Social Media App",
+    title: "Spring Valley Estates Neural Network",
     description:
-      "A social media platform where users can create profiles, post updates, and interact with other users. The app has features such as newsfeed, commenting, liking, messaging, and user authentication.",
+      "A Residential Estate Management for Spring Valley. Our team developed a web application for the management and mobile application for the residents.",
     imgUrl:
       "https://cdn.dribbble.com/users/2547176/screenshots/15348170/media/1433f78530f2b5a8c9505fd6d699284f.png?compress=1&resize=800x600&vertical=top",
-    type: "Development",
-    tags: ["React", "Node.js", "Express.js", "MongoDB", "Socket.io"],
+    type: "Design & Development",
+    tags: [
+      "TypeScript",
+      "Next.js",
+      "React",
+      "React Libraries",
+      "TailwindCSS",
+      "Flutter",
+      "Dart",
+      "Figma",
+      "Git",
+      "Gitlab",
+      "PostgreSQL",
+      "HTML5",
+      "CSS3",
+      "API",
+      "Chart.js",
+    ],
+    link: "https://booored.vercel.app",
     images: [
       "https://picsum.photos/id/1018/1000/600/",
       "https://picsum.photos/id/1015/1000/600/",
@@ -30,13 +66,24 @@ const projects: IProjectCard[] = [
     ],
   },
   {
-    title: "Fitness Tracker",
+    title: "Pollice",
     description:
-      "An app that allows users to track their fitness activities such as workouts, calories burned, and steps taken. The app has features such as user authentication, data visualization, and goal setting.",
+      "Pollice is an Election System App for WVSU-CICT. As a back-end developer, I created the logic and functionality of our application. I was also the database administrator who designed and managed our database.",
     imgUrl:
       "https://cdn.dribbble.com/userupload/4384272/file/original-b51c32bfcb4e7244d725bc362439980e.png?compress=1&resize=1024x768",
     type: "Development",
-    tags: ["React", "Node.js", "Express.js", "MongoDB", "Chart.js"],
+    tags: [
+      "Python",
+      "Flask",
+      "JavaScript",
+      "MongoDB",
+      "TailwindCSS",
+      "Git",
+      "GitHub",
+      "Nginx",
+      "Linode",
+    ],
+    link: "https://booored.vercel.app",
     images: [
       "https://picsum.photos/id/1018/1000/600/",
       "https://picsum.photos/id/1015/1000/600/",
@@ -44,13 +91,14 @@ const projects: IProjectCard[] = [
     ],
   },
   {
-    title: "Food Delivery App",
+    title: "Interactive Dictionary",
     description:
-      "A mobile app that allows users to order food from nearby restaurants for delivery. The app has features such as user authentication, restaurant search, menu browsing, ordering, and payment gateway integration.",
+      "I built a dictionary in different interfaces. (1) CLI, (2) Desktop GUI (3) Web. The CLI app was made with Python. The Desktop GUI app was made with Java following the MVC pattern. I then used JavaFX for the GUI and JSON.simple toolkit to parse JSON text. The Web interface was made with JavaScript and React.",
     imgUrl:
       "https://cdn.dribbble.com/userupload/4511869/file/original-6c8445c7882017bad20592639a806356.png?compress=1&resize=1024x768",
-    type: "Design",
-    tags: ["React Native", "Node.js", "Express.js", "MongoDB", "Stripe"],
+    type: "Development",
+    tags: ["Python", "Java", "JavaFX", "JavaScript", "React", "Git", "GitHub"],
+    link: "https://booored.vercel.app",
     images: [
       "https://picsum.photos/id/1018/1000/600/",
       "https://picsum.photos/id/1015/1000/600/",
@@ -58,13 +106,25 @@ const projects: IProjectCard[] = [
     ],
   },
   {
-    title: "Online Learning Platform",
+    title: "The Bored Hoomans App",
     description:
-      "A platform that provides online courses for students. The website has features such as course catalog, enrollment, progress tracking, discussion forums, and user authentication.",
+      "A website created for bored hoomans with some spare time and looking for ways to spend that time.",
     imgUrl:
       "https://cdn.dribbble.com/userupload/4208343/file/original-dd0ee735d64e42fd63fbb81496c4d9b1.jpg?compress=1&resize=1024x768",
-    type: "Design",
-    tags: ["React", "Node.js", "Express.js", "MongoDB", "GraphQL"],
+    type: "Development",
+    tags: [
+      "JavaScript",
+      "Next.js",
+      "React",
+      "Git",
+      "GitHub",
+      "Vercel",
+      "API",
+      "HTML5",
+      "TailwindCSS",
+      "CSS3",
+    ],
+    link: "https://booored.vercel.app",
     images: [
       "https://picsum.photos/id/1018/1000/600/",
       "https://picsum.photos/id/1015/1000/600/",
@@ -72,33 +132,49 @@ const projects: IProjectCard[] = [
     ],
   },
   {
-    title: "Real Estate Listing",
+    title: "Machine Learning and Data Related Projects",
     description:
-      "A website that allows users to search for properties for rent or sale. The website has features such as property search, property listing, user authentication, and payment gateway integration.",
+      "I have trained several models in order to uncover interesting insights or to make predictions such as the following: (1) predict the hospital facility, equipment and specialist needed by an emergency patient with the patient's condition as inputs; (2) predict the sentiment of a review from the IMDB Dataset with Logistic Regression and Feature Extraction; (3) predict the digit of a handwritten number from 0-9 using a Random Forest Classier; (4) predict the employment in the Philippines with a Time-Series Analysis using Skforecast; (5) nd if there is an association with suicide rate and unemployment.",
     imgUrl:
       "https://cdn.dribbble.com/userupload/5779728/file/original-02887eee802d54333afb3aab085dcc73.png?compress=1&resize=1024x768",
-    type: "Design",
-    tags: ["React", "Node.js", "Express.js", "MongoDB", "Google Maps API"],
+    type: "Data Science",
+    tags: [
+      "Python",
+      "Flask",
+      "Machine Learning",
+      "Data Science",
+      "scikit-learn",
+      "pandas",
+      "numpy",
+      "nltk",
+      "Git",
+      "GitHub",
+      "JupyterLab",
+      "Google Colab",
+      "Kaggle",
+    ],
+    link: "https://booored.vercel.app",
     images: [
       "https://picsum.photos/id/1018/1000/600/",
       "https://picsum.photos/id/1015/1000/600/",
       "https://picsum.photos/id/1019/1000/600/",
     ],
   },
-  {
-    title: "Job Board",
-    description:
-      "A website that allows employers to post job openings and job seekers to search for job opportunities. The website has features such as job search, job posting, user authentication, and resume submission.",
-    imgUrl:
-      "https://cdn.dribbble.com/userupload/5454629/file/original-6429af9e16d7b554437548da18b52c41.png?compress=1&resize=1024x768",
-    type: "Data Analytics",
-    tags: ["React", "Node.js", "Express.js", "MongoDB", "AWS S3"],
-    images: [
-      "https://picsum.photos/id/1018/1000/600/",
-      "https://picsum.photos/id/1015/1000/600/",
-      "https://picsum.photos/id/1019/1000/600/",
-    ],
-  },
+  // {
+  //   title: "Job Board",
+  //   description:
+  //     "A website that allows employers to post job openings and job seekers to search for job opportunities. The website has features such as job search, job posting, user authentication, and resume submission.",
+  //   imgUrl:
+  //     "https://cdn.dribbble.com/userupload/5454629/file/original-6429af9e16d7b554437548da18b52c41.png?compress=1&resize=1024x768",
+  //   type: "Data Analytics",
+  //   tags: ["React", "Node.js", "Express.js", "MongoDB", "AWS S3"],
+  //   link: "https://booored.vercel.app",
+  //   images: [
+  //     "https://picsum.photos/id/1018/1000/600/",
+  //     "https://picsum.photos/id/1015/1000/600/",
+  //     "https://picsum.photos/id/1019/1000/600/",
+  //   ],
+  // },
 ];
 
 export default projects;
