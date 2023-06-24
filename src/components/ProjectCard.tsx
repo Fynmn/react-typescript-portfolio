@@ -236,11 +236,11 @@ const ProjectCard: React.FC<IProjectCard> = ({
             viewport={{ once: true }}
           >
             <div className="flex flex-col items-start">
-              <div className="font-semibold text-xl sm:text-2xl mt-4 text-yellow-900 group-hover:animate-grow animate-grow_transition">
+              <div className="font-semibold text-xl sm:text-2xl mt-4 text-yellow-900 group-hover:animate-grow animate-grow_transition text-start">
                 {title}
               </div>
 
-              <div className="text-xs sm:text-sm leading-5 sm:leading-6 font-light text-yellow-900 mt-2 group-hover:animate-grow animate-grow_transition text-start">
+              <div className="line-clamp-2 text-xs sm:text-sm leading-5 sm:leading-6 font-light text-yellow-900 mt-2 group-hover:animate-grow animate-grow_transition text-start">
                 {/* without leading */}
                 {/* <div className="text-xs sm:text-sm font-light text-yellow-700 mt-2 group-hover:animate-grow animate-grow_transition"> */}
                 {description}
