@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { SectionProps } from "./types";
 import ParticlesBackground from "../ParticlesBackground";
 import DownloadButton from "../DownloadButton";
-// import { HiArrowDownTray } from "react-icons/hi";
+import { Link } from "react-scroll";
+import { BsArrowDown } from "react-icons/bs";
 
 interface IntroductionProps extends SectionProps {}
 
@@ -46,11 +47,35 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
               Typescript and more. I also do Design and Data Analytics too!
             </p> */}
           </div>
-          <div className="flex justify-center md:justify-end py-1">
-            <DownloadButton
-              btnText="Download CV"
-              pdfUrl="assets/files/CV_v2.pdf"
-            />
+          <div className="flex justify-center md:justify-end items-center py-1 gap-x-4">
+            <div className="">
+              <Link
+                to={"projects-section"}
+                smooth={true}
+                offset={5}
+                duration={700}
+                className="select-none relative group cursor-pointer px-1"
+                onClick={() => {}}
+              >
+                <div className="flex justify-start relative ">
+                  <button className="inline-flex items-center gap-x-1 group text-yellow-500 font-semibold hover:scale-105">
+                    <BsArrowDown size={18} />
+                    <p className="text-sm pr-2">Explore my work</p>
+
+                    <span
+                      className={`group-hover:w-full group-hover:left-0 group-hover:bg-yellow-500 block absolute -bottom-1 right-0 h-[2px] active:w-full active:left-0 active:bg-yellow-500 w-0 bg-yellow-500`}
+                    ></span>
+                  </button>
+                </div>
+              </Link>
+            </div>
+
+            <div className="">
+              <DownloadButton
+                btnText="Download CV"
+                pdfUrl="assets/files/CV_v2.pdf"
+              />
+            </div>
           </div>
         </div>
 
