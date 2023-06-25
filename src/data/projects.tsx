@@ -37,7 +37,7 @@ const projects: IProjectCard[] = [
   {
     title: "Spring Valley Estates Neural Network",
     description:
-      "A Residential Estate Management for Spring Valley. Our team developed a web application for the management and mobile application for the residents.",
+      "A Residential Estate Management for Spring Valley. Our team developed a web application for the management and mobile application for the residents. I was the lead UI/UX designer and front-end developer for both mobile and web.",
     imgUrl:
       "https://cdn.dribbble.com/users/2547176/screenshots/15348170/media/1433f78530f2b5a8c9505fd6d699284f.png?compress=1&resize=800x600&vertical=top",
     type: "Design & Development",
