@@ -82,16 +82,9 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
         <div className="w-60 h-60 sm:w-80 sm:h-80 md:w-96 md:h-96">
           <div className="relative w-full h-full">
             <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -left-10 bottom-9 md:bottom-[72px] sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
-              {/* <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-6 py-6 -left-10 bottom-12"> */}
               <p className="text-[10px] sm:text-sm font-semibold text-yellow-950">
                 Design with Figma
               </p>
-              {/* <div className="flex flex-col relative h-12 w-12">
-                <img
-                  className="absolute object-contain w-full h-full"
-                  src="assets/figma.svg"
-                ></img>
-              </div> */}
             </div>
 
             <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -right-16 bottom-20 md:bottom-32 sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
