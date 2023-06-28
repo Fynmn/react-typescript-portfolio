@@ -179,17 +179,21 @@ const ProjectCard: React.FC<IProjectCard> = ({
                     ))}
                   </div>
 
-                  <div className="mt-4 flex justify-start relative w-[88px]">
-                    <a href={link} target="_blank">
-                      <button className="inline-flex items-center gap-x-1 group text-yellow-500 font-semibold hover:scale-105">
-                        <p className="text-sm ">Visit Link</p>
-                        <BsArrowRight size={18} />
-                        <span
-                          className={`group-hover:w-full group-hover:left-0 group-hover:bg-yellow-500 block absolute -bottom-1 right-0 h-[2px] active:w-full active:left-0 active:bg-yellow-500 w-0 bg-yellow-500`}
-                        ></span>
-                      </button>
-                    </a>
-                  </div>
+                  {link == "null" ? (
+                    <div></div>
+                  ) : (
+                    <div className="mt-4 flex justify-start relative w-[88px]">
+                      <a href={link} target="_blank">
+                        <button className="inline-flex items-center gap-x-1 group text-yellow-500 font-semibold hover:scale-105">
+                          <p className="text-sm ">Visit Link</p>
+                          <BsArrowRight size={18} />
+                          <span
+                            className={`group-hover:w-full group-hover:left-0 group-hover:bg-yellow-500 block absolute -bottom-1 right-0 h-[2px] active:w-full active:left-0 active:bg-yellow-500 w-0 bg-yellow-500`}
+                          ></span>
+                        </button>
+                      </a>
+                    </div>
+                  )}
 
                   <div className="mt-4 flex justify-end">
                     <button

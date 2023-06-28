@@ -8,7 +8,7 @@ const projects: IProjectCard[] = [
     imgUrl:
       "https://cdn.dribbble.com/userupload/2719744/file/original-7b44670833617cf55327818eb6bc84ce.png?crop=0x0-3201x2401&resize=400x0",
     type: "Development",
-    link: "https://booored.vercel.app",
+    link: "null",
     tags: [
       "JavaScript",
       "React",
@@ -58,7 +58,7 @@ const projects: IProjectCard[] = [
       "API",
       "Chart.js",
     ],
-    link: "https://booored.vercel.app",
+    link: "null",
     images: [
       "https://picsum.photos/id/1018/1000/600/",
       "https://picsum.photos/id/1015/1000/600/",
@@ -83,7 +83,7 @@ const projects: IProjectCard[] = [
       "Nginx",
       "Linode",
     ],
-    link: "https://booored.vercel.app",
+    link: "https://github.com/Fynmn/pollice",
     images: [
       "https://picsum.photos/id/1018/1000/600/",
       "https://picsum.photos/id/1015/1000/600/",
@@ -97,8 +97,17 @@ const projects: IProjectCard[] = [
     imgUrl:
       "https://cdn.dribbble.com/userupload/4511869/file/original-6c8445c7882017bad20592639a806356.png?compress=1&resize=1024x768",
     type: "Development",
-    tags: ["Python", "Java", "JavaFX", "JavaScript", "React", "Git", "GitHub"],
-    link: "https://booored.vercel.app",
+    tags: [
+      "Python",
+      "Java",
+      "JavaFX",
+      "JavaScript",
+      "React",
+      "Git",
+      "GitHub",
+      "Vercel",
+    ],
+    link: "https://definr.vercel.app",
     images: [
       "https://picsum.photos/id/1018/1000/600/",
       "https://picsum.photos/id/1015/1000/600/",
@@ -123,6 +132,7 @@ const projects: IProjectCard[] = [
       "HTML5",
       "TailwindCSS",
       "CSS3",
+      "Vercel",
     ],
     link: "https://booored.vercel.app",
     images: [
@@ -152,8 +162,9 @@ const projects: IProjectCard[] = [
       "JupyterLab",
       "Google Colab",
       "Kaggle",
+      "API Development",
     ],
-    link: "https://booored.vercel.app",
+    link: "https://github.com/Fynmn/machine-learning-and-data-science",
     images: [
       "https://picsum.photos/id/1018/1000/600/",
       "https://picsum.photos/id/1015/1000/600/",
