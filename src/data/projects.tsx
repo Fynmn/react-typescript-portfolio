@@ -4,9 +4,10 @@ const projects: IProjectCard[] = [
   {
     title: "Hospilink",
     description:
-      "HospiLink is a web application that utilizes machine learning and Google Distance Matrix API to help EMTs transport the patient to the best suitable hospital in the shortest amount of time. I was a front-end developer who made the web app functional by rendering thedata, state management, form validation, form submission, crud operations and animations. I was also a machine learning engineer who developed the model for predicting the hospital facilities, equipment and specialists needed by the patient. I was also a microservice developer who used the exported model and developed an API so applications can make requests to the API for predictions.",
+      "This app bagged multiple awards from our college(Best Thesis) to the region(Regional Champion) and national(Top 10) level. HospiLink is a web application that utilizes machine learning and Google Distance Matrix API to help EMTs transport the patient to the best suitable hospital in the shortest amount of time. I was a front-end developer who made the web app functional by rendering the data from our API, managed the states, validated the forms with react libraries, submitted the forms, made functional crud operations and animations. I was also a machine learning engineer who developed the model for predicting the hospital facilities, equipment and specialists needed by the patient. I was also a microservice developer who used the exported model and developed an API so applications can make requests to the API for predictions.",
     imgUrl:
-      "https://cdn.dribbble.com/userupload/2719744/file/original-7b44670833617cf55327818eb6bc84ce.png?crop=0x0-3201x2401&resize=400x0",
+      // "https://cdn.dribbble.com/userupload/2719744/file/original-7b44670833617cf55327818eb6bc84ce.png?crop=0x0-3201x2401&resize=400x0",
+      "assets/img/projects/HospiLink_preview.png",
     type: "Development",
     link: "null",
     tags: [
