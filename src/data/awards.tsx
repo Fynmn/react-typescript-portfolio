@@ -78,7 +78,7 @@ const awards: IAwardCard[] = [
       ></img>
     ),
     placement: "Best Project Presentation",
-    title: "On-the-Job Training Final Project Presentation",
+    title: "On-the-Job Training Final Project Presentation (Team SVENN)",
     date: "May 5, 2023",
   },
   {
