@@ -72,7 +72,7 @@ const projects: IProjectCard[] = [
       "Pollice is an Election System App for WVSU-CICT. As a back-end developer, I created the logic and functionality of our application. I was also the database administrator who designed and managed our database.",
     imgUrl:
       // "https://cdn.dribbble.com/userupload/4384272/file/original-b51c32bfcb4e7244d725bc362439980e.png?compress=1&resize=1024x768",
-      "assets/img/projects/Pollice_preview.png",
+      "assets/img/projects/Pollice_preview1.png",
     type: "Development",
     tags: [
       "Python",
