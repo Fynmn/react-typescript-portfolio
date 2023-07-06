@@ -96,8 +96,8 @@ const projects: IProjectCard[] = [
     title: "Interactive Dictionary",
     description:
       "I built a dictionary in different interfaces. (1) CLI, (2) Desktop GUI (3) Web. The CLI app was made with Python. The Desktop GUI app was made with Java following the MVC pattern. I then used JavaFX for the GUI and JSON.simple toolkit to parse JSON text. The Web interface was made with JavaScript and React.",
-    imgUrl:
-      "https://cdn.dribbble.com/userupload/4511869/file/original-6c8445c7882017bad20592639a806356.png?compress=1&resize=1024x768",
+    imgUrl: "assets/img/projects/InteractiveDictionary_preview.png",
+    // "https://cdn.dribbble.com/userupload/4511869/file/original-6c8445c7882017bad20592639a806356.png?compress=1&resize=1024x768",
     type: "Development",
     tags: [
       "Python",
@@ -120,8 +120,8 @@ const projects: IProjectCard[] = [
     title: "The Bored Hoomans App",
     description:
       "A website created for bored hoomans with some spare time and looking for ways to spend that time.",
-    imgUrl:
-      "https://cdn.dribbble.com/userupload/4208343/file/original-dd0ee735d64e42fd63fbb81496c4d9b1.jpg?compress=1&resize=1024x768",
+    imgUrl: "assets/img/projects/Booored_preview.png",
+    // "https://cdn.dribbble.com/userupload/4208343/file/original-dd0ee735d64e42fd63fbb81496c4d9b1.jpg?compress=1&resize=1024x768",
     type: "Development",
     tags: [
       "JavaScript",
@@ -147,8 +147,8 @@ const projects: IProjectCard[] = [
     title: "Machine Learning and Data Related Projects",
     description:
       "I have trained several models in order to uncover interesting insights or to make predictions such as the following: (1) predict the hospital facility, equipment and specialist needed by an emergency patient with the patient's condition as inputs; (2) predict the sentiment of a review from the IMDB Dataset with Logistic Regression and Feature Extraction; (3) predict the digit of a handwritten number from 0-9 using a Random Forest Classier; (4) predict the employment in the Philippines with a Time-Series Analysis using Skforecast; (5) find out if there is an association with suicide rate and unemployment.",
-    imgUrl:
-      "https://cdn.dribbble.com/userupload/5779728/file/original-02887eee802d54333afb3aab085dcc73.png?compress=1&resize=1024x768",
+    imgUrl: "assets/img/projects/ML_preview.png",
+    // "https://cdn.dribbble.com/userupload/5779728/file/original-02887eee802d54333afb3aab085dcc73.png?compress=1&resize=1024x768",
     type: "Data Science",
     tags: [
       "Python",
