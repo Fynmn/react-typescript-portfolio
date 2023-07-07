@@ -1,13 +1,17 @@
 import { IProjectCard } from "@/components/ProjectCard";
+import {
+  getHospiLinkFilenames,
+  getPolliceFilenames,
+  getInteractiveDictFilenames,
+  getBoooredFilenames,
+} from "@/utils/fileUtils";
 
 const projects: IProjectCard[] = [
   {
     title: "Hospilink",
     description:
       "This app bagged multiple awards from our college(Best Thesis) to the region(Regional Champion) and national(Top 10) level. HospiLink is a web application that utilizes machine learning and Google Distance Matrix API to help EMTs transport the patient to the best suitable hospital in the shortest amount of time. I was a front-end developer who made the web app functional by rendering the data from our API, managed the states, validated the forms with react libraries, submitted the forms, made functional crud operations and animations. I was also a machine learning engineer who developed the model for predicting the hospital facilities, equipment and specialists needed by the patient. I was also a microservice developer who used the exported model and developed an API so applications can make requests to the API for predictions.",
-    imgUrl:
-      // "https://cdn.dribbble.com/userupload/2719744/file/original-7b44670833617cf55327818eb6bc84ce.png?crop=0x0-3201x2401&resize=400x0",
-      "assets/img/projects/HospiLink_preview.png",
+    imgUrl: "assets/img/projects/HospiLink_preview.png",
     type: "Development",
     link: "null",
     tags: [
@@ -29,11 +33,8 @@ const projects: IProjectCard[] = [
       "Machine Learning",
       "API Development",
     ],
-    images: [
-      "https://picsum.photos/id/1018/1000/600/",
-      "https://picsum.photos/id/1015/1000/600/",
-      "https://picsum.photos/id/1019/1000/600/",
-    ],
+
+    images: getHospiLinkFilenames(),
   },
   // {
   //   title: "Spring Valley Estates Neural Network",
@@ -101,9 +102,7 @@ const projects: IProjectCard[] = [
     title: "Pollice",
     description:
       "Pollice is an Election System App for WVSU-CICT. As a back-end developer, I created the logic and functionality of our application. I was also the database administrator who designed and managed our database.",
-    imgUrl:
-      // "https://cdn.dribbble.com/userupload/4384272/file/original-b51c32bfcb4e7244d725bc362439980e.png?compress=1&resize=1024x768",
-      "assets/img/projects/Pollice_preview1.png",
+    imgUrl: "assets/img/projects/Pollice_preview1.png",
     type: "Development",
     tags: [
       "Python",
@@ -117,18 +116,13 @@ const projects: IProjectCard[] = [
       "Linode",
     ],
     link: "https://github.com/Fynmn/pollice",
-    images: [
-      "https://picsum.photos/id/1018/1000/600/",
-      "https://picsum.photos/id/1015/1000/600/",
-      "https://picsum.photos/id/1019/1000/600/",
-    ],
+    images: getPolliceFilenames(),
   },
   {
     title: "Interactive Dictionary",
     description:
       "I built a dictionary in different interfaces. (1) CLI, (2) Desktop GUI (3) Web. The CLI app was made with Python. The Desktop GUI app was made with Java following the MVC pattern. I then used JavaFX for the GUI and JSON.simple toolkit to parse JSON text. The Web interface was made with JavaScript and React.",
     imgUrl: "assets/img/projects/InteractiveDictionary_preview.png",
-    // "https://cdn.dribbble.com/userupload/4511869/file/original-6c8445c7882017bad20592639a806356.png?compress=1&resize=1024x768",
     type: "Development",
     tags: [
       "Python",
@@ -141,18 +135,13 @@ const projects: IProjectCard[] = [
       "Vercel",
     ],
     link: "https://definr.vercel.app",
-    images: [
-      "https://picsum.photos/id/1018/1000/600/",
-      "https://picsum.photos/id/1015/1000/600/",
-      "https://picsum.photos/id/1019/1000/600/",
-    ],
+    images: getInteractiveDictFilenames(),
   },
   {
     title: "The Bored Hoomans App",
     description:
       "A website created for bored hoomans with some spare time and looking for ways to spend that time.",
     imgUrl: "assets/img/projects/Booored_preview.png",
-    // "https://cdn.dribbble.com/userupload/4208343/file/original-dd0ee735d64e42fd63fbb81496c4d9b1.jpg?compress=1&resize=1024x768",
     type: "Development",
     tags: [
       "JavaScript",
@@ -168,18 +157,13 @@ const projects: IProjectCard[] = [
       "Vercel",
     ],
     link: "https://booored.vercel.app",
-    images: [
-      "https://picsum.photos/id/1018/1000/600/",
-      "https://picsum.photos/id/1015/1000/600/",
-      "https://picsum.photos/id/1019/1000/600/",
-    ],
+    images: getBoooredFilenames(),
   },
   {
     title: "Machine Learning and Data Related Projects",
     description:
       "I have trained several models in order to uncover interesting insights or to make predictions such as the following: (1) predict the hospital facility, equipment and specialist needed by an emergency patient with the patient's condition as inputs; (2) predict the sentiment of a review from the IMDB Dataset with Logistic Regression and Feature Extraction; (3) predict the digit of a handwritten number from 0-9 using a Random Forest Classier; (4) predict the employment in the Philippines with a Time-Series Analysis using Skforecast; (5) find out if there is an association with suicide rate and unemployment.",
     imgUrl: "assets/img/projects/MLDS_preview.png",
-    // "https://cdn.dribbble.com/userupload/5779728/file/original-02887eee802d54333afb3aab085dcc73.png?compress=1&resize=1024x768",
     type: "Data Science",
     tags: [
       "Python",

@@ -3,14 +3,6 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 
-// // core version + navigation, pagination modules:
-// import Swiper, { Navigation, Pagination } from "swiper";
-// // import { Swiper, SwiperSlide } from "swiper/react";
-// // import Swiper and modules styles
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -19,7 +11,6 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
-import FlatShadowCard from "./FlatShadowCard";
 
 export interface IProjectCard {
   title: string;
@@ -40,12 +31,6 @@ const ProjectCard: React.FC<IProjectCard> = ({
   link,
   images,
 }) => {
-  // init Swiper:
-  // const swiper = new Swiper(".swiper", {
-  //   // configure Swiper to use modules
-  //   modules: [Navigation, Pagination],
-  // });
-
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   function handleOpen() {
@@ -55,12 +40,6 @@ const ProjectCard: React.FC<IProjectCard> = ({
   const handleClose = () => {
     setIsOpen(false);
   };
-
-  const active = false;
-
-  // function renBul(index: number, className: React.CSSProperties): React.CSSProperties {
-  //   return <span class="' + className + '">' + (index + 1) + "</span>;
-  // }
 
   return (
     <>
@@ -113,7 +92,7 @@ const ProjectCard: React.FC<IProjectCard> = ({
                       onSwiper={(swiper) => console.log(swiper)}
                     >
                       {images.map((img, i) => (
-                        <SwiperSlide className="rounded-2xl">
+                        <SwiperSlide className="rounded-2xl" key={i}>
                           <div className="flex items-start justify-start h-full w-full">
                             <img
                               className="absolute object-contain h-full w-full"
