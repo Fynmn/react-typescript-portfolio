@@ -73,7 +73,8 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
             <div className="">
               <DownloadButton
                 btnText="Download CV"
-                pdfUrl="assets/files/CV_v2.pdf"
+                // pdfUrl="assets/files/CV_v2.pdf"
+                pdfUrl="assets/files/temp_CV_Natalie.pdf"
               />
             </div>
           </div>
