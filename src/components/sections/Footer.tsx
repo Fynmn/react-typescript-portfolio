@@ -46,7 +46,9 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
           }`}
         >
           <FaRegCopy />
-          <p> Copied 'nataliejane.pacificar@outlook.com'</p>
+          <p className="text-xs sm:text-base">
+            Copied 'nataliejane.pacificar@outlook.com'
+          </p>
         </FlatShadowCard>
       </div>
     ));

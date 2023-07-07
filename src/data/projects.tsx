@@ -35,10 +35,41 @@ const projects: IProjectCard[] = [
       "https://picsum.photos/id/1019/1000/600/",
     ],
   },
+  // {
+  //   title: "Spring Valley Estates Neural Network",
+  //   description:
+  //     "A Residential Estate Management for Spring Valley. Our team developed a web application for the management and mobile application for the residents. I was the lead UI/UX designer and front-end developer for both mobile and web.",
+  //   imgUrl:
+  //     "https://cdn.dribbble.com/users/2547176/screenshots/15348170/media/1433f78530f2b5a8c9505fd6d699284f.png?compress=1&resize=800x600&vertical=top",
+  //   type: "Design & Development",
+  //   tags: [
+  //     "TypeScript",
+  //     "Next.js",
+  //     "React",
+  //     "React Libraries",
+  //     "TailwindCSS",
+  //     "Flutter",
+  //     "Dart",
+  //     "Figma",
+  //     "Git",
+  //     "GitLab",
+  //     "PostgreSQL",
+  //     "HTML5",
+  //     "CSS3",
+  //     "API",
+  //     "Chart.js",
+  //   ],
+  //   link: "null",
+  //   images: [
+  //     "https://picsum.photos/id/1018/1000/600/",
+  //     "https://picsum.photos/id/1015/1000/600/",
+  //     "https://picsum.photos/id/1019/1000/600/",
+  //   ],
+  // },
   {
-    title: "Spring Valley Estates Neural Network",
+    title: "Spring Valley Project",
     description:
-      "A Residential Estate Management for Spring Valley. Our team developed a web application for the management and mobile application for the residents. I was the lead UI/UX designer and front-end developer for both mobile and web.",
+      "This is an OJT Project where we were tasked on creating a startup project from scratch. Our team developed a web application for the management and mobile application for the residents. I was the lead UI/UX designer and front-end developer for both mobile and web app.",
     imgUrl:
       "https://cdn.dribbble.com/users/2547176/screenshots/15348170/media/1433f78530f2b5a8c9505fd6d699284f.png?compress=1&resize=800x600&vertical=top",
     type: "Design & Development",
@@ -52,7 +83,7 @@ const projects: IProjectCard[] = [
       "Dart",
       "Figma",
       "Git",
-      "Gitlab",
+      "GitLab",
       "PostgreSQL",
       "HTML5",
       "CSS3",
