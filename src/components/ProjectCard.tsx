@@ -49,7 +49,7 @@ const ProjectCard: React.FC<IProjectCard> = ({
     setIsOpen(false);
   };
 
-  console.log(getHospiLinkFilenames());
+  // console.log(getHospiLinkFilenames());
 
   return (
     <>
