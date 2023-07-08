@@ -106,10 +106,10 @@ const ProjectCard: React.FC<IProjectCard> = ({
                       loop={true}
                       spaceBetween={10}
                       navigation={false}
-                      // thumbs={{ swiper: thumbsSwiper }}
-                      thumbs={
-                        thumbsSwiper ? { swiper: thumbsSwiper } : undefined
-                      }
+                      thumbs={{ swiper: thumbsSwiper }}
+                      // thumbs={
+                      //   thumbsSwiper ? { swiper: thumbsSwiper } : undefined
+                      // }
                       modules={[FreeMode, Navigation, Thumbs]}
                     >
                       {images.map((img, i) => (
