@@ -9,8 +9,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+
 // import required modules
 import { Pagination } from "swiper";
+import { FreeMode, Navigation, Thumbs } from "swiper";
 
 export interface IProjectCard {
   title: string;
@@ -31,6 +36,8 @@ const ProjectCard: React.FC<IProjectCard> = ({
   link,
   images,
 }) => {
+  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
+
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   function handleOpen() {
@@ -72,7 +79,7 @@ const ProjectCard: React.FC<IProjectCard> = ({
                   {/* <div className="rounded-[20px] bg-yellow-500"> */}
                   <div className="flex justify-center items-center h-[150px] sm:h-[280px] w-full p-2 bg-yellow-500">
                     {/* <div className="h-[280px] w-full bg-yellow-500"> */}
-                    <Swiper
+                    {/* <Swiper
                       className="h-full w-full "
                       pagination={{
                         clickable: true,
@@ -90,6 +97,16 @@ const ProjectCard: React.FC<IProjectCard> = ({
                       slidesPerView={1}
                       onSlideChange={() => console.log("slide change")}
                       onSwiper={(swiper) => console.log(swiper)}
+                    > */}
+                    <Swiper
+                      className="h-full w-full"
+                      loop={true}
+                      spaceBetween={10}
+                      navigation={false}
+                      thumbs={
+                        thumbsSwiper ? { swiper: thumbsSwiper } : undefined
+                      }
+                      modules={[FreeMode, Navigation, Thumbs]}
                     >
                       {images.map((img, i) => (
                         <SwiperSlide className="rounded-2xl" key={i}>
@@ -102,6 +119,7 @@ const ProjectCard: React.FC<IProjectCard> = ({
                         </SwiperSlide>
                       ))}
                     </Swiper>
+
                     {/* </div> */}
                     {/* <Swiper
                       className="h-[280px] w-full rounded-2xl -top-1"
@@ -135,6 +153,28 @@ const ProjectCard: React.FC<IProjectCard> = ({
                         </FlatShadowCard>
                       ))}
                     </Swiper> */}
+                  </div>
+                  <div className="">
+                    {/* <div className="bg-yellow-500 mt-2"> */}
+                    <Swiper
+                      onSwiper={setThumbsSwiper}
+                      loop={true}
+                      spaceBetween={10}
+                      slidesPerView={4}
+                      freeMode={true}
+                      watchSlidesProgress={true}
+                      modules={[FreeMode, Navigation, Thumbs]}
+                      className="mySwiper"
+                    >
+                      {images.map((img, i) => (
+                        <SwiperSlide className="" key={i}>
+                          <img
+                            className="object-contain h-16 w-full"
+                            src={img}
+                          />
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
                   </div>
                   {/* </div> */}
                   <div className="text-yellow-900 text-2xl font-medium mt-4">
