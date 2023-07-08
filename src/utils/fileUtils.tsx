@@ -69,3 +69,20 @@ export function getBoooredFilenames(): string[] {
 
   return filenames;
 }
+
+export function getMLDSFilenames(): string[] {
+  const files = import.meta.glob("../../public/assets/img/projects/ml_ds/*");
+  const filenames: string[] = [];
+
+  for (const path in files) {
+    if (files.hasOwnProperty(path)) {
+      const filename = path.replace(
+        "../../public/assets/img/projects/ml_ds/",
+        "assets/img/projects/ml_ds/"
+      );
+      filenames.push(filename);
+    }
+  }
+
+  return filenames;
+}

@@ -4,6 +4,7 @@ import {
   getPolliceFilenames,
   getInteractiveDictFilenames,
   getBoooredFilenames,
+  getMLDSFilenames,
 } from "@/utils/fileUtils";
 
 const projects: IProjectCard[] = [
@@ -182,11 +183,7 @@ const projects: IProjectCard[] = [
       "API Development",
     ],
     link: "https://github.com/Fynmn/machine-learning-and-data-science",
-    images: [
-      "https://picsum.photos/id/1018/1000/600/",
-      "https://picsum.photos/id/1015/1000/600/",
-      "https://picsum.photos/id/1019/1000/600/",
-    ],
+    images: getMLDSFilenames(),
   },
   // {
   //   title: "Job Board",
