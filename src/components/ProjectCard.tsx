@@ -141,7 +141,9 @@ const ProjectCard: React.FC<IProjectCard> = ({
                     {title}
                   </div>
                   <div className="mt-2">
-                    <p className="text-sm text-yellow-900">{description}</p>
+                    <p className="text-sm text-yellow-900 leading-7">
+                      {description}
+                    </p>
                   </div>
 
                   <div className="flex flex-wrap mt-4 gap-y-2 group-hover:animate-grow animate-grow_transition">
