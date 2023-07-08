@@ -158,10 +158,10 @@ const ProjectCard: React.FC<IProjectCard> = ({
                   <div className="">
                     {/* <div className="bg-yellow-500 mt-2"> */}
                     <Swiper
-                      onSwiper={setThumbsSwiper}
-                      // thumbs={
-                      //   thumbsSwiper ? { swiper: thumbsSwiper } : undefined
-                      // }
+                      // onSwiper={setThumbsSwiper}
+                      thumbs={
+                        thumbsSwiper ? { swiper: thumbsSwiper } : undefined
+                      }
                       loop={true}
                       spaceBetween={10}
                       slidesPerView={5}
