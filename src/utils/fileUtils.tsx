@@ -17,6 +17,25 @@ export function getHospiLinkFilenames(): string[] {
   return filenames;
 }
 
+export function getSpringValleyFilenames(): string[] {
+  const files = import.meta.glob(
+    "../../public/assets/img/projects/spring_valley/*"
+  );
+  const filenames: string[] = [];
+
+  for (const path in files) {
+    if (files.hasOwnProperty(path)) {
+      const filename = path.replace(
+        "../../public/assets/img/projects/spring_valley/",
+        "assets/img/projects/spring_valley/"
+      );
+      filenames.push(filename);
+    }
+  }
+
+  return filenames;
+}
+
 export function getPolliceFilenames(): string[] {
   const files = import.meta.glob("../../public/assets/img/projects/pollice/*");
   const filenames: string[] = [];

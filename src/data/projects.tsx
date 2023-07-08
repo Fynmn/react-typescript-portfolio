@@ -1,6 +1,7 @@
 import { IProjectCard } from "@/components/ProjectCard";
 import {
   getHospiLinkFilenames,
+  getSpringValleyFilenames,
   getPolliceFilenames,
   getInteractiveDictFilenames,
   getBoooredFilenames,
@@ -72,8 +73,8 @@ const projects: IProjectCard[] = [
     title: "Spring Valley Project",
     description:
       "This is an OJT Project where we were tasked on creating a startup project from scratch. Our team developed a web application for the management and mobile application for the residents. I was the lead UI/UX designer and front-end developer for both mobile and web app.",
-    imgUrl:
-      "https://cdn.dribbble.com/users/2547176/screenshots/15348170/media/1433f78530f2b5a8c9505fd6d699284f.png?compress=1&resize=800x600&vertical=top",
+    imgUrl: "assets/img/projects/SpringValley_preview.png",
+    // "https://cdn.dribbble.com/users/2547176/screenshots/15348170/media/1433f78530f2b5a8c9505fd6d699284f.png?compress=1&resize=800x600&vertical=top",
     type: "Design & Development",
     tags: [
       "TypeScript",
@@ -93,11 +94,7 @@ const projects: IProjectCard[] = [
       "Chart.js",
     ],
     link: "null",
-    images: [
-      "https://picsum.photos/id/1018/1000/600/",
-      "https://picsum.photos/id/1015/1000/600/",
-      "https://picsum.photos/id/1019/1000/600/",
-    ],
+    images: getSpringValleyFilenames(),
   },
   {
     title: "Pollice",
