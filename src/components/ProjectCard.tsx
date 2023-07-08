@@ -75,9 +75,9 @@ const ProjectCard: React.FC<IProjectCard> = ({
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full my-16 max-w-lg transform overflow-hidden bg-white p-8 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full my-16 max-w-2xl transform overflow-hidden bg-white p-8 text-left align-middle shadow-xl transition-all">
                   {/* <div className="rounded-[20px] bg-yellow-500"> */}
-                  <div className="flex justify-center items-center h-[150px] sm:h-[280px] w-full p-2 bg-yellow-500">
+                  <div className="flex justify-center items-center h-[150px] sm:h-96 w-full p-2 bg-yellow-500">
                     {/* <div className="h-[280px] w-full bg-yellow-500"> */}
                     {/* <Swiper
                       className="h-full w-full "
@@ -103,10 +103,10 @@ const ProjectCard: React.FC<IProjectCard> = ({
                       loop={true}
                       spaceBetween={10}
                       navigation={false}
-                      thumbs={{ swiper: thumbsSwiper }}
-                      // thumbs={
-                      //   thumbsSwiper ? { swiper: thumbsSwiper } : undefined
-                      // }
+                      // thumbs={{ swiper: thumbsSwiper }}
+                      thumbs={
+                        thumbsSwiper ? { swiper: thumbsSwiper } : undefined
+                      }
                       modules={[FreeMode, Navigation, Thumbs]}
                     >
                       {images.map((img, i) => (
@@ -161,7 +161,7 @@ const ProjectCard: React.FC<IProjectCard> = ({
                       onSwiper={setThumbsSwiper}
                       loop={true}
                       spaceBetween={10}
-                      slidesPerView={4}
+                      slidesPerView={5}
                       freeMode={true}
                       watchSlidesProgress={true}
                       modules={[FreeMode, Navigation, Thumbs]}
