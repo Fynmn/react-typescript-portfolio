@@ -16,6 +16,7 @@ import "swiper/css/thumbs";
 // import required modules
 import { Pagination } from "swiper";
 import { FreeMode, Navigation, Thumbs } from "swiper";
+import { getHospiLinkFilenames } from "@/utils/fileUtils";
 
 export interface IProjectCard {
   title: string;
@@ -47,6 +48,8 @@ const ProjectCard: React.FC<IProjectCard> = ({
   const handleClose = () => {
     setIsOpen(false);
   };
+
+  console.log(getHospiLinkFilenames());
 
   return (
     <>
@@ -103,10 +106,10 @@ const ProjectCard: React.FC<IProjectCard> = ({
                       loop={true}
                       spaceBetween={10}
                       navigation={false}
-                      thumbs={{ swiper: thumbsSwiper }}
-                      // thumbs={
-                      //   thumbsSwiper ? { swiper: thumbsSwiper } : undefined
-                      // }
+                      // thumbs={{ swiper: thumbsSwiper }}
+                      thumbs={
+                        thumbsSwiper ? { swiper: thumbsSwiper } : undefined
+                      }
                       modules={[FreeMode, Navigation, Thumbs]}
                     >
                       {images.map((img, i) => (
