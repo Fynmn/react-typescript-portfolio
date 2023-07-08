@@ -51,6 +51,8 @@ const ProjectCard: React.FC<IProjectCard> = ({
 
   // console.log(getHospiLinkFilenames());
 
+  // console.log("ThumbSwiper: " + JSON.stringify(thumbsSwiper));
+
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
@@ -106,10 +108,16 @@ const ProjectCard: React.FC<IProjectCard> = ({
                       loop={true}
                       spaceBetween={10}
                       navigation={false}
-                      thumbs={{ swiper: thumbsSwiper }}
+                      // thumbs={{ swiper: thumbsSwiper }}
                       // thumbs={
                       //   thumbsSwiper ? { swiper: thumbsSwiper } : undefined
                       // }
+                      thumbs={{
+                        swiper:
+                          thumbsSwiper && !thumbsSwiper.destroyed
+                            ? thumbsSwiper
+                            : null,
+                      }}
                       modules={[FreeMode, Navigation, Thumbs]}
                     >
                       {images.map((img, i) => (
@@ -159,7 +167,6 @@ const ProjectCard: React.FC<IProjectCard> = ({
                     </Swiper> */}
                   </div>
                   <div className="">
-                    {/* <div className="bg-yellow-500 mt-2"> */}
                     <Swiper
                       onSwiper={setThumbsSwiper}
                       loop={true}
