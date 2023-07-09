@@ -58,7 +58,7 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
     <section
       id="contact-section"
       ref={sectionRef}
-      className="max-w-7xl w-full mx-auto relative"
+      className="max-w-[1440px] w-full mx-auto relative"
     >
       <div className="bg-yellow-700 text-white pb-16 mt-32 flex flex-col">
         <div
