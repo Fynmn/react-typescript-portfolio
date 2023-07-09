@@ -97,13 +97,13 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
           </div>
           <div className="w-full flex justify-center md:justify-end">
             <h1 className="text-yellow-500 text-4xl sm:text-5xl md:text-7xl font-semibold">
-              <TypingAnimation text="Pacificar" typingSpeed={300} delay={2} />
+              <TypingAnimation text="Pacificar" typingSpeed={200} delay={4.2} />
             </h1>
           </div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 4.9 }}
+            transition={{ delay: 6.9 }}
           >
             <div className="flex flex-wrap mt-6 ">
               <p className="text-yellow-900 text-center text-xs sm:text-sm md:text-end leading-5 sm:leading-6">
@@ -130,7 +130,7 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
                 <motion.div
                   initial={{ opacity: 0, y: -100 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 6.9 }}
+                  transition={{ delay: 8.9, duration: 0.8 }}
                 >
                   <div className="flex justify-start relative ">
                     <button className="inline-flex items-center gap-x-1 group text-yellow-500 font-semibold hover:scale-105">
@@ -148,7 +148,7 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
             <motion.div
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 5.9 }}
+              transition={{ delay: 7.9, duration: 0.8 }}
             >
               <div className="">
                 <DownloadButton
@@ -160,36 +160,39 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
             </motion.div>
           </div>
         </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0, y: -1000, rotate: 180 }}
+          animate={{ opacity: 1, scale: 1, y: 0, rotate: 0 }}
+          transition={{ duration: 2, delay: 8.9 }}
+        >
+          <div className="w-60 h-60 sm:w-80 sm:h-80 md:w-96 md:h-96">
+            <div className="relative w-full h-full">
+              <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -left-10 bottom-9 md:bottom-[72px] sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
+                <p className="text-[10px] sm:text-sm font-semibold text-yellow-950">
+                  Design with Figma
+                </p>
+              </div>
 
-        <div className="w-60 h-60 sm:w-80 sm:h-80 md:w-96 md:h-96">
-          <div className="relative w-full h-full">
-            <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -left-10 bottom-9 md:bottom-[72px] sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
-              <p className="text-[10px] sm:text-sm font-semibold text-yellow-950">
-                Design with Figma
-              </p>
-            </div>
+              <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -right-16 bottom-20 md:bottom-32 sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
+                <p className="text-[10px] sm:text-sm font-semibold text-yellow-950">
+                  Data Science with Python
+                </p>
+              </div>
 
-            <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -right-16 bottom-20 md:bottom-32 sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
-              <p className="text-[10px] sm:text-sm font-semibold text-yellow-950">
-                Data Science with Python
-              </p>
-            </div>
+              <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -right-12 sm:-right-24 -bottom-7 md:bottom-3 sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
+                <p className="text-[10px] sm:text-sm font-semibold text-yellow-950">
+                  Web apps with React, Next.js, Flask and more
+                </p>
+              </div>
 
-            <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -right-12 sm:-right-24 -bottom-7 md:bottom-3 sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
-              <p className="text-[10px] sm:text-sm font-semibold text-yellow-950">
-                Web apps with React, Next.js, Flask and more
-              </p>
-            </div>
-
-            <motion.div>
               <img
                 src="/assets/img/Profile.png"
                 alt=""
                 className="absolute object-cover w-full h-full z-10"
               />
-            </motion.div>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
