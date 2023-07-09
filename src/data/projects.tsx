@@ -6,6 +6,7 @@ import {
   getInteractiveDictFilenames,
   getBoooredFilenames,
   getMLDSFilenames,
+  getComingSoonFilenames,
 } from "@/utils/fileUtils";
 
 const projects: IProjectCard[] = [
@@ -184,11 +185,11 @@ const projects: IProjectCard[] = [
   {
     title: "Foodiverse",
     description: "An Online Personal Recipes Archive App.",
-    imgUrl: "assets/img/projects/MLDS_preview.png",
+    imgUrl: "assets/img/projects/ComingSoon_preview.png",
     type: "Design",
     tags: ["Figma", "UI/UX"],
     link: "https://figma.com",
-    images: getMLDSFilenames(),
+    images: getComingSoonFilenames(),
   },
   // {
   //   title: "Job Board",
