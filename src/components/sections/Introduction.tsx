@@ -1,11 +1,61 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { SectionProps } from "./types";
 import ParticlesBackground from "../ParticlesBackground";
 import DownloadButton from "../DownloadButton";
 import { Link } from "react-scroll";
 import { BsArrowDown } from "react-icons/bs";
+import React, { useEffect, useState } from "react";
 
 interface IntroductionProps extends SectionProps {}
+
+interface TypingAnimationProps {
+  text: String;
+  typingSpeed: number;
+  delay: number;
+}
+
+const TypingAnimation: React.FC<TypingAnimationProps> = ({
+  text,
+  typingSpeed,
+  delay,
+}) => {
+  const [typedText, setTypedText] = useState("");
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const intervalId = setInterval(() => {
+      setTypedText(text.substring(0, currentIndex));
+      currentIndex++;
+      if (currentIndex > text.length) {
+        clearInterval(intervalId);
+      }
+    }, typingSpeed); // Adjust the typing speed here (in milliseconds)
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [text]);
+
+  return (
+    <AnimatePresence>
+      <div className="w-full text-center md:text-end">
+        <h1 className="">
+          {typedText.split("").map((char: any, index: any) => (
+            <motion.span
+              key={index}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ delay: delay }}
+            >
+              {char}
+            </motion.span>
+          ))}
+        </h1>
+      </div>
+    </AnimatePresence>
+  );
+};
 
 const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
   return (
@@ -17,36 +67,56 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
       <ParticlesBackground />
       <div className="relative flex gap-x-16 flex-wrap justify-center items-center gap-y-8 py-8 md:px-16">
         <div className="flex flex-col gap-y-3 w-[300px] sm:w-[400px] ">
-          <div className="flex flex-col gap-y-3 ">
-            <div className="flex gap-x-1 items-center md:justify-end justify-center">
-              <span className="wave">👋</span>{" "}
-              <p className="text-yellow-900 font-medium text-sm sm:text-lg">
-                Hola, I'm
-              </p>
-            </div>
+          <div className="flex flex-col gap-y-3">
+            <motion.div
+              initial={{ opacity: 0, y: -1000 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2 }}
+            >
+              <div className="flex gap-x-1 items-center md:justify-end justify-center">
+                <span className="wave">👋</span>
+                <p className="text-yellow-900 font-medium text-sm sm:text-lg">
+                  <TypingAnimation
+                    text="Hola, I'm"
+                    typingSpeed={200}
+                    delay={0}
+                  />
+                </p>
+              </div>
+            </motion.div>
 
             <div className="w-full text-center md:text-end">
               <h1 className="text-yellow-500 text-4xl sm:text-5xl md:text-7xl font-semibold ">
-                Natalie Jane
+                <TypingAnimation
+                  text="Natalie Jane"
+                  typingSpeed={200}
+                  delay={2}
+                />
               </h1>
             </div>
           </div>
           <div className="w-full flex justify-center md:justify-end">
             <h1 className="text-yellow-500 text-4xl sm:text-5xl md:text-7xl font-semibold">
-              Pacificar
+              <TypingAnimation text="Pacificar" typingSpeed={300} delay={2} />
             </h1>
           </div>
-          <div className="flex flex-wrap mt-6 ">
-            <p className="text-yellow-900 text-center text-xs sm:text-sm md:text-end leading-5 sm:leading-6">
-              A Computer Science Major in Artificial Intelligence Graduate from
-              West Visayas State University. I do magic with code.
-            </p>
-            {/* <p className="text-yellow-900 text-sm text-end leading-6">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 4.9 }}
+          >
+            <div className="flex flex-wrap mt-6 ">
+              <p className="text-yellow-900 text-center text-xs sm:text-sm md:text-end leading-5 sm:leading-6">
+                A Computer Science Major in Artificial Intelligence Graduate
+                from West Visayas State University. I do magic with code.
+              </p>
+              {/* <p className="text-yellow-900 text-sm text-end leading-6">
               A Computer Science Major in Artificial Intelligence Graduate from
               West Visayas State University. I do magic with React, Python,
               Typescript and more. I also do Design and Data Analytics too!
             </p> */}
-          </div>
+            </div>
+          </motion.div>
           <div className="flex justify-center md:justify-end items-center py-1 gap-x-8">
             <div className="hidden sm:block">
               <Link
@@ -57,26 +127,37 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
                 className="select-none relative group cursor-pointer px-1"
                 onClick={() => {}}
               >
-                <div className="flex justify-start relative ">
-                  <button className="inline-flex items-center gap-x-1 group text-yellow-500 font-semibold hover:scale-105">
-                    <BsArrowDown size={18} />
-                    <p className="text-sm pr-2">Explore my work</p>
+                <motion.div
+                  initial={{ opacity: 0, y: -100 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 6.9 }}
+                >
+                  <div className="flex justify-start relative ">
+                    <button className="inline-flex items-center gap-x-1 group text-yellow-500 font-semibold hover:scale-105">
+                      <BsArrowDown size={18} />
+                      <p className="text-sm pr-2">Explore my work</p>
 
-                    <span
-                      className={`group-hover:w-full group-hover:left-0 group-hover:bg-yellow-500 block absolute -bottom-1 right-0 h-[2px] active:w-full active:left-0 active:bg-yellow-500 w-0 bg-yellow-500`}
-                    ></span>
-                  </button>
-                </div>
+                      <span
+                        className={`group-hover:w-full group-hover:left-0 group-hover:bg-yellow-500 block absolute -bottom-1 right-0 h-[2px] active:w-full active:left-0 active:bg-yellow-500 w-0 bg-yellow-500`}
+                      ></span>
+                    </button>
+                  </div>
+                </motion.div>
               </Link>
             </div>
-
-            <div className="">
-              <DownloadButton
-                btnText="Download CV"
-                // pdfUrl="assets/files/CV_v2.pdf"
-                pdfUrl="assets/files/temp_CV_Natalie.pdf"
-              />
-            </div>
+            <motion.div
+              initial={{ opacity: 0, y: -100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 5.9 }}
+            >
+              <div className="">
+                <DownloadButton
+                  btnText="Download CV"
+                  // pdfUrl="assets/files/CV_v2.pdf"
+                  pdfUrl="assets/files/temp_CV_Natalie.pdf"
+                />
+              </div>
+            </motion.div>
           </div>
         </div>
 
@@ -100,11 +181,13 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
               </p>
             </div>
 
-            <img
-              src="/assets/img/Profile.png"
-              alt=""
-              className="absolute object-cover w-full h-full z-10"
-            />
+            <motion.div>
+              <img
+                src="/assets/img/Profile.png"
+                alt=""
+                className="absolute object-cover w-full h-full z-10"
+              />
+            </motion.div>
           </div>
         </div>
       </div>
