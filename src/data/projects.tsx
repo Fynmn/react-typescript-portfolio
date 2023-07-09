@@ -74,7 +74,6 @@ const projects: IProjectCard[] = [
     description:
       "This is an OJT Project where we were tasked on creating a startup project from scratch. Our team developed a web application for the management and mobile application for the residents. I was the lead UI/UX designer and front-end developer for both mobile and web app.",
     imgUrl: "assets/img/projects/SpringValley_preview.png",
-    // "https://cdn.dribbble.com/users/2547176/screenshots/15348170/media/1433f78530f2b5a8c9505fd6d699284f.png?compress=1&resize=800x600&vertical=top",
     type: "Design & Development",
     tags: [
       "TypeScript",
@@ -100,7 +99,7 @@ const projects: IProjectCard[] = [
     title: "Pollice",
     description:
       "Pollice is an Election System App for WVSU-CICT. As a back-end developer, I created the logic and functionality of our application. I was also the database administrator who designed and managed our database.",
-    imgUrl: "assets/img/projects/Pollice_preview1.png",
+    imgUrl: "assets/img/projects/Pollice_preview.png",
     type: "Development",
     tags: [
       "Python",
@@ -180,6 +179,15 @@ const projects: IProjectCard[] = [
       "API Development",
     ],
     link: "https://github.com/Fynmn/machine-learning-and-data-science",
+    images: getMLDSFilenames(),
+  },
+  {
+    title: "Foodiverse",
+    description: "An Online Personal Recipes Archive App.",
+    imgUrl: "assets/img/projects/MLDS_preview.png",
+    type: "Design",
+    tags: ["Figma", "UI/UX"],
+    link: "https://figma.com",
     images: getMLDSFilenames(),
   },
   // {
