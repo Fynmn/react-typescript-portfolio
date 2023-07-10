@@ -67,7 +67,7 @@ const awards: IAwardCard[] = [
       ></img>
     ),
     placement: "Presenter",
-    title: "2023 Fair on Innovation, Reserach and Extension Services",
+    title: "2023 Fair on Innovation, Research and Extension Services (FIRES)",
     date: "June 1, 2022",
   },
   {
@@ -89,7 +89,7 @@ const awards: IAwardCard[] = [
       ></img>
     ),
     placement: "Gold Medalist",
-    title: "College of ICT - BS Computer Science (1st Year)",
+    title: "College of ICT - BS Computer Science (4th Year)",
     date: "June 1, 2022",
   },
   {
@@ -100,19 +100,8 @@ const awards: IAwardCard[] = [
       ></img>
     ),
     placement: "Gold Medalist",
-    title: "College of ICT - BS Computer Science (2nd Year)",
-    date: "June 1, 2022",
-  },
-  {
-    icon: (
-      <img
-        className="absolute object-cover w-full h-full"
-        src="assets/img/psc_regional_cert.jpg"
-      ></img>
-    ),
-    placement: "Silver Medalist",
     title: "College of ICT - BS Computer Science (3rd Year)",
-    date: "June 1, 2022",
+    date: "July 15, 2022",
   },
   {
     icon: (
@@ -122,8 +111,19 @@ const awards: IAwardCard[] = [
       ></img>
     ),
     placement: "Silver Medalist",
-    title: "College of ICT - BS Computer Science (4th Year)",
-    date: "June 1, 2022",
+    title: "College of ICT - BS Computer Science (2nd Year)",
+    date: "August 27, 2021",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-cover w-full h-full"
+        src="assets/img/psc_regional_cert.jpg"
+      ></img>
+    ),
+    placement: "Silver Medalist",
+    title: "College of ICT - BS Computer Science (1st Year)",
+    date: "August 27, 2021",
   },
 ];
 
