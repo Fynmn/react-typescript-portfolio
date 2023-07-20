@@ -106,6 +106,25 @@ export function getMLDSFilenames(): string[] {
   return filenames;
 }
 
+export function getNothingHeldBackFilenames(): string[] {
+  const files = import.meta.glob(
+    "../../public/assets/img/projects/nothing_held_back/*"
+  );
+  const filenames: string[] = [];
+
+  for (const path in files) {
+    if (files.hasOwnProperty(path)) {
+      const filename = path.replace(
+        "../../public/assets/img/projects/nothing_held_back/",
+        "assets/img/projects/nothing_held_back/"
+      );
+      filenames.push(filename);
+    }
+  }
+
+  return filenames;
+}
+
 export function getComingSoonFilenames(): string[] {
   const files = import.meta.glob(
     "../../public/assets/img/projects/coming_soon/*"

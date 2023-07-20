@@ -7,6 +7,7 @@ import {
   getBoooredFilenames,
   getMLDSFilenames,
   getComingSoonFilenames,
+  getNothingHeldBackFilenames,
 } from "@/utils/fileUtils";
 
 const projects: IProjectCard[] = [
@@ -73,7 +74,7 @@ const projects: IProjectCard[] = [
   {
     title: "Spring Valley Project",
     description:
-      "This is an OJT Project where we were tasked on creating a startup project from scratch. Our team developed a web application for the management and mobile application for the residents. I was the lead UI/UX designer and front-end developer for both mobile and web app.",
+      "This is an OJT Project where we were tasked on creating a startup project from scratch. Our team developed a web application for the management and mobile application for the residents. The interface was 100% done while we were able to make most of the features functional for up to 90% by successfully making API calls and handling errors; then having implemented typesafe APIs with tRPC as well as a PostgreSQL dbms. I was the lead UI/UX designer and front-end developer for both mobile and web app.",
     imgUrl: "assets/img/projects/SpringValley_preview.png",
     type: "Design & Development",
     tags: [
@@ -92,6 +93,7 @@ const projects: IProjectCard[] = [
       "CSS3",
       "API",
       "Chart.js",
+      "tRPC",
     ],
     link: "null",
     images: getSpringValleyFilenames(),
@@ -183,6 +185,16 @@ const projects: IProjectCard[] = [
     images: getMLDSFilenames(),
   },
   {
+    title: "Nothing Held Back",
+    description:
+      "A coding test which I accomplished in about 12 hours more or less. For this test, I was required to slice up the design from Figma and then turn it into code specifically: HTML, CSS(with an option to use TailwindCSS) & JavaScript. It is also mobile, iPad and Desktop/Laptop responsive. As a personal hobby, I plan to use React and convert the tags to semantic html for future improvements of this page. The code is not entirely broken down into components but I plan to do so for improvements.",
+    imgUrl: "assets/img/projects/NHB_preview.png",
+    type: "Development",
+    tags: ["TypeScript", "JavaScript", "TailwindCSS", "HTML", "CSS"],
+    link: "https://natalie-frontend-dev-task.vercel.app/",
+    images: getNothingHeldBackFilenames(),
+  },
+  {
     title: "Foodiverse",
     description: "An Online Personal Recipes Archive App.",
     imgUrl: "assets/img/projects/ComingSoon_preview.png",
@@ -191,6 +203,7 @@ const projects: IProjectCard[] = [
     link: "https://figma.com",
     images: getComingSoonFilenames(),
   },
+
   // {
   //   title: "Job Board",
   //   description:
