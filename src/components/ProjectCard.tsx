@@ -82,7 +82,7 @@ const ProjectCard: React.FC<IProjectCard> = ({
               >
                 <Dialog.Panel className="w-full my-16 max-w-2xl transform overflow-hidden bg-white p-8 text-left align-middle shadow-xl transition-all">
                   {/* <div className="rounded-[20px] bg-yellow-500"> */}
-                  <div className="flex justify-center items-center h-[150px] sm:h-96 w-full p-2 bg-yellow-500">
+                  <div className="flex justify-center items-center h-[150px] sm:h-96 w-full p-2 bg-slate-50">
                     {/* <div className="h-[280px] w-full bg-yellow-500"> */}
                     {/* <Swiper
                       className="h-full w-full "
