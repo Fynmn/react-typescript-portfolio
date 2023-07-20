@@ -187,7 +187,7 @@ const projects: IProjectCard[] = [
   {
     title: "Nothing Held Back",
     description:
-      "A coding test which I accomplished in about 12 hours more or less. For this test, I was required to slice up the design from Figma and then turn it into code specifically: HTML, CSS(with an option to use TailwindCSS) & JavaScript. It is also mobile, iPad and Desktop/Laptop responsive. As a personal hobby, I plan to use React and convert the tags to semantic html for future improvements of this page. The code is not entirely broken down into components but I plan to do so for improvements.",
+      "A coding test which I accomplished in about 12 hours more or less. For this test, I was required to slice up the design from Figma and then turn it into code specifically: HTML, CSS(with an option to use TailwindCSS) & JavaScript. It is currently only limited to iPad Air, mobile and Desktop/Laptop responsive. As a personal hobby, I plan to use React and convert the tags to semantic html for future improvements of this page as well as enahnce the responsiveness in other devices. The code is not entirely broken down into components but I plan to do some refactoring for further tweaking.",
     imgUrl: "assets/img/projects/NHB_preview.png",
     type: "Development",
     tags: ["TypeScript", "JavaScript", "TailwindCSS", "HTML", "CSS"],
