@@ -195,6 +195,16 @@ const projects: IProjectCard[] = [
     images: getNothingHeldBackFilenames(),
   },
   {
+    title: "Patient Booking",
+    description:
+      "A simple patient booking design which I accomplished in less than 12 hours.",
+    imgUrl: "assets/img/projects/ComingSoon_preview.png",
+    type: "Design",
+    tags: ["Figma", "UI/UX"],
+    link: "https://nataliejane.vercel.app/",
+    images: getComingSoonFilenames(),
+  },
+  {
     title: "Foodiverse",
     description: "An Online Personal Recipes Archive App.",
     imgUrl: "assets/img/projects/ComingSoon_preview.png",
