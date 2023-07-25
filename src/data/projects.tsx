@@ -197,11 +197,11 @@ const projects: IProjectCard[] = [
   {
     title: "Patient Booking",
     description:
-      "A simple patient booking design which I accomplished in less than 12 hours.",
+      "A simple patient booking design which I accomplished in less than 12 hours and then collaborated with my UI/UX Designer friend to improve the UI/UX.",
     imgUrl: "assets/img/projects/ComingSoon_preview.png",
     type: "Design",
     tags: ["Figma", "UI/UX"],
-    link: "https://nataliejane.vercel.app/",
+    link: "https://www.figma.com/file/SW57Itc3iPwlZVbwQ25kkP/%5BNatalie%5D-CWP---Front-End-Developer---UI%2FUX-Screening?type=design&node-id=0-1&mode=design&t=jrX3klaGJSKjpm0s-0",
     images: getComingSoonFilenames(),
   },
   {
