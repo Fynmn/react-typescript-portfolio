@@ -185,6 +185,26 @@ const projects: IProjectCard[] = [
     images: getMLDSFilenames(),
   },
   {
+    title: "Time Tracking",
+    description:
+      "An app that allows a user to track their time by adding a time entry, with a number of hours as well as a task description and project. The users are able to see the tasks they rendered on each project weekly and their rendered hours on each project weekly as well. The user can create an account by signing up and then log in to their account. The data is currently stored in local storage and later on, I plan to use Firebase to store some data quickly together with React Query for fetching and caching data; then Clerk for user authentication and management. I'll also be using Zustand for local state management. The projects are currently in the form of a pre-filled list and I plan to make it dynamic later on so user can add custom projects.",
+    imgUrl: "assets/img/projects/ComingSoon_preview.png",
+    type: "Design & Development",
+    tags: [
+      "JavaScript",
+      "React",
+      "React Libraries",
+      "TailwindCSS",
+      "HTML",
+      "CSS",
+      "Git",
+      "GitHub",
+      "Figma",
+    ],
+    link: "https://timetracker.vercel.app",
+    images: getComingSoonFilenames(),
+  },
+  {
     title: "Nothing Held Back",
     description:
       "A coding test which I accomplished in about 12 hours more or less. For this test, I was required to slice up the design from Figma and then turn it into code specifically: HTML, CSS(with an option to use TailwindCSS) & JavaScript. It is currently only limited to iPad Air, mobile and Desktop/Laptop responsive. As a personal hobby, I plan to use React and convert the tags to semantic html for future improvements of this page as well as enahnce the responsiveness in other devices. The code is not entirely broken down into components but I plan to do some refactoring for further tweaking.",
