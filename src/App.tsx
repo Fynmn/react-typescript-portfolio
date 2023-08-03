@@ -7,6 +7,7 @@ import Projects from "./components/sections/Projects";
 import Skills from "./components/sections/Skills";
 import Awards from "./components/sections/Awards";
 import Footer from "./components/sections/Footer";
+import MouseTrailingEffect from "./components/MouseTrailingEffect";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -19,6 +20,7 @@ function App() {
         style={{ scaleX: scrollYProgress }}
       />
       <div className="flex flex-col w-full bg-white min-h-screen">
+        <MouseTrailingEffect />
         <Nav></Nav>
         <Introduction></Introduction>
         <Projects></Projects>
