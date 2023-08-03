@@ -52,7 +52,7 @@ const Awards: React.FC<AwardsProps> = ({ sectionRef }) => {
         Awards & Certificates
       </h1>
 
-      <div className="w-ull h-full" ref={ref}>
+      <div className="w-full h-full" ref={ref}>
         <motion.div
           variants={awardsVariants}
           initial="hidden"
