@@ -9,7 +9,7 @@ export interface IExperienceCard {
 const experiences: IExperienceCard[] = [
   {
     job_title: "Software Engineer Trainee",
-    company: "Spring Valley Tech Crop.",
+    company: "Spring Valley Tech Corp.",
     start_date: "January 30, 2023",
     end_date: " - May 10, 2023",
     skills: [
