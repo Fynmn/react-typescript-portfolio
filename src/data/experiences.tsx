@@ -17,8 +17,9 @@ const experiences: IExperienceCardProps[] = [
     start_date: "August 7, 2023",
     end_date: undefined,
     description:
-      "Creating high-quality no-code web applications for enterprises, characterized by seamless functionality, robust capabilities, and distinctive features.",
-    tech_stack: "Bubble.io, Linear, Notion, Slack",
+      "Collaborating with developers and designers to create high-quality web applications for enterprises, characterized by seamless functionality, robust capabilities, and distinctive features.",
+    tech_stack:
+      "Bubble.io, Linear, Notion, Slack, JavaScript, third party plugins",
   },
 ];
 
