@@ -74,7 +74,7 @@ const projects: IProjectCard[] = [
   {
     title: "Spring Valley Project",
     description:
-      "This is an OJT Project where we were tasked on creating a startup project from scratch. Our team developed a web application for the management and mobile application for the residents. The interface was 100% done while we were able to make most of the features functional for up to 90% by successfully making API calls and handling errors; then having implemented typesafe APIs with tRPC as well as a PostgreSQL dbms. I was the lead UI/UX designer and front-end developer for both mobile and web app.",
+      "This is an Internship Project where we were tasked on creating a startup project from scratch which is to be utilized by the company. Our team developed a web application for the management and mobile application for the residents. The interface was 100% done while we were able to make most of the features functional for up to 90% by successfully making API calls and handling errors; then having implemented typesafe APIs with tRPC as well as a PostgreSQL dbms. I was the lead UI/UX designer and front-end developer for both mobile and web app.",
     imgUrl: "assets/img/projects/SpringValley_preview.png",
     type: "Design & Development",
     tags: [
