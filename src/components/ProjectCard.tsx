@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
+import Tag from "./Tag";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -198,16 +199,9 @@ const ProjectCard: React.FC<IProjectCard> = ({
                   </div>
 
                   <div className="flex flex-wrap mt-4 gap-y-2 group-hover:animate-grow animate-grow_transition">
-                    <span className="bg-yellow-900 text-white text-xs mr-2 px-2.5 py-0.5 rounded">
-                      {type}
-                    </span>
+                    <Tag text={type} variant="primary" />
                     {tags.map((tag, i) => (
-                      <span
-                        key={i}
-                        className="bg-yellow-500 text-yellow-100 text-xs mr-2 px-2.5 py-0.5 rounded"
-                      >
-                        {tag}
-                      </span>
+                      <Tag key={i} text={tag} variant="technology" />
                     ))}
                   </div>
 
@@ -254,10 +248,10 @@ const ProjectCard: React.FC<IProjectCard> = ({
             viewport={{ once: true }}
           >
             <div className="cursor-pointer relative">
-              <div className="absolute inset-0 bg-yellow-500 h-[300px] w-full sm:h-[400px] sm:w-full group-hover:animate-rotate animate-rotate_transition group-hover:rotate-3 group-hover:animate-grow animate-grow_transition"></div>
-              <div className="relative h-[300px] w-full sm:h-[400px] sm:w-full z-0 group-hover:animate-grow animate-grow_transition">
+              <div className="absolute inset-0 bg-yellow-500 h-[300px] w-full sm:h-[400px] sm:w-full rounded-2xl group-hover:animate-rotate animate-rotate_transition group-hover:rotate-3 group-hover:animate-grow animate-grow_transition group-hover:scale-101 transition-all duration-700 ease-out"></div>
+              <div className="relative h-[300px] w-full sm:h-[400px] sm:w-full z-0 group-hover:animate-grow animate-grow_transition transition-all duration-700 ease-out">
                 <img
-                  className="absolute object-cover w-full h-full -top-4 -left-4"
+                  className="absolute object-cover w-full h-full -top-4 -left-4 rounded-2xl transition-all duration-700 ease-out group-hover:scale-102"
                   src={imgUrl}
                 />
               </div>
@@ -272,26 +266,19 @@ const ProjectCard: React.FC<IProjectCard> = ({
             viewport={{ once: true }}
           >
             <div className="flex flex-col items-start">
-              <div className="font-semibold text-xl sm:text-2xl mt-4 text-yellow-900 group-hover:animate-grow animate-grow_transition text-start">
+              <div className="font-semibold text-xl sm:text-2xl mt-4 text-yellow-900 group-hover:text-yellow-700 text-start transition-all duration-300 ease-in-out">
                 {title}
               </div>
 
-              <div className="line-clamp-2 text-xs sm:text-sm leading-5 sm:leading-6 font-light text-yellow-900 mt-2 group-hover:animate-grow animate-grow_transition text-start">
+              <div className="line-clamp-2 text-xs sm:text-sm leading-5 sm:leading-6 font-light text-yellow-900 mt-2 group-hover:text-yellow-700 text-start transition-all duration-300 ease-in-out">
                 {/* without leading */}
                 {/* <div className="text-xs sm:text-sm font-light text-yellow-700 mt-2 group-hover:animate-grow animate-grow_transition"> */}
                 {description}
               </div>
-              <div className="flex flex-wrap mt-4 gap-y-2 group-hover:animate-grow animate-grow_transition">
-                <span className="bg-yellow-900 text-white text-xs mr-2 px-2.5 py-0.5 rounded">
-                  {type}
-                </span>
+              <div className="flex flex-wrap mt-4 gap-y-2 transition-all duration-300 ease-in-out">
+                <Tag text={type} variant="primary" />
                 {tags.map((tag, i) => (
-                  <span
-                    key={i}
-                    className="bg-yellow-500 text-yellow-100 text-xs mr-2 px-2.5 py-0.5 rounded"
-                  >
-                    {tag}
-                  </span>
+                  <Tag key={i} text={tag} variant="technology" />
                 ))}
               </div>
             </div>

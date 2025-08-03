@@ -9,7 +9,7 @@ export interface ISkillCard {
 
 const SkillCard: React.FC<ISkillCard> = ({ icon, label, seeAll }) => {
   return (
-    <div className="group flex flex-col items-center justify-evenly w-[100px] hover:bg-white hover:rounded-xl cursor-pointer h-[120px]">
+            <div className="group flex flex-col items-center justify-evenly w-[100px] hover:bg-white hover:rounded-2xl cursor-pointer h-[120px]">
       <div className="flex flex-col relative h-[50px] w-[50px]">{icon}</div>
       <p
         className={cx(

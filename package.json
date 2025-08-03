@@ -34,6 +34,7 @@
     "react-scroll": "^1.8.9",
     "react-tippy": "^1.4.0",
     "react-tooltip": "^5.18.0",
+    "react-vertical-timeline-component": "^3.5.3",
     "swiper": "^9.4.1",
     "tippy.js": "^6.3.7",
     "tsparticles": "^2.10.1",

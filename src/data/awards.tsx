@@ -119,7 +119,8 @@ const awards: IAwardCard[] = [
       <img
         className="absolute object-cover w-full h-full"
         src="assets/img/psc_regional_cert.jpg"
-      ></img>
+        alt="PSC Regional Certificate"
+      />
     ),
     placement: "Silver Medalist",
     title: "College of ICT - BS Computer Science (1st Year)",

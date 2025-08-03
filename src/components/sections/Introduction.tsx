@@ -69,9 +69,9 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
         <div className="flex flex-col gap-y-3 w-[300px] sm:w-[400px] ">
           <div className="flex flex-col gap-y-3">
             <motion.div
-              initial={{ opacity: 0, y: -1000 }}
+              initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
             >
               <div className="flex gap-x-1 items-center md:justify-end justify-center">
                 <span className="wave">👋</span>
@@ -101,9 +101,9 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
             </h1>
           </div>
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 6.9 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 3.5, duration: 0.5, ease: "easeOut" }}
           >
             <div className="flex flex-wrap mt-6 ">
               <p className="text-yellow-900 text-center text-xs sm:text-sm md:text-end leading-5 sm:leading-6">
@@ -128,9 +128,9 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
                 onClick={() => {}}
               >
                 <motion.div
-                  initial={{ opacity: 0, y: -100 }}
+                  initial={{ opacity: 0, y: -30 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 8.9, duration: 0.8 }}
+                  transition={{ delay: 4.2, duration: 0.5, ease: "easeOut" }}
                 >
                   <div className="flex justify-start relative ">
                     <button className="inline-flex items-center gap-x-1 group text-yellow-500 font-semibold hover:scale-105">
@@ -146,9 +146,9 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
               </Link>
             </div>
             <motion.div
-              initial={{ opacity: 0, y: -100 }}
+              initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 7.9, duration: 0.8 }}
+              transition={{ delay: 4.5, duration: 0.5, ease: "easeOut" }}
             >
               <div className="">
                 <DownloadButton
@@ -161,25 +161,25 @@ const Introduction: React.FC<IntroductionProps> = ({ sectionRef }) => {
           </div>
         </div>
         <motion.div
-          initial={{ opacity: 0, scale: 0, y: -1000, rotate: 180 }}
+          initial={{ opacity: 0, scale: 0.8, y: -50, rotate: -10 }}
           animate={{ opacity: 1, scale: 1, y: 0, rotate: 0 }}
-          transition={{ duration: 2, delay: 8.9 }}
+          transition={{ duration: 0.8, delay: 2.5, ease: "easeOut" }}
         >
           <div className="w-60 h-60 sm:w-80 sm:h-80 md:w-96 md:h-96">
             <div className="relative w-full h-full">
-              <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -left-10 bottom-9 md:bottom-[72px] sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
+              <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -left-10 bottom-9 md:bottom-[72px] sm:hover:scale-120 hover:scale-110 hover:cursor-pointer">
                 <p className="text-[10px] sm:text-sm font-semibold text-yellow-950">
                   Design with Figma
                 </p>
               </div>
 
-              <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -right-16 bottom-20 md:bottom-32 sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
+              <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -right-16 bottom-20 md:bottom-32 sm:hover:scale-120 hover:scale-110 hover:cursor-pointer">
                 <p className="text-[10px] sm:text-sm font-semibold text-yellow-950">
                   Data Science with Python
                 </p>
               </div>
 
-              <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -right-12 sm:-right-24 -bottom-7 md:bottom-3 sm:hover:scale-150 hover:scale-110 hover:cursor-pointer">
+              <div className="absolute glassIco z-20 before:absolute flex justify-center items-center px-4 py-2 -right-12 sm:-right-24 -bottom-7 md:bottom-3 sm:hover:scale-120 hover:scale-110 hover:cursor-pointer">
                 <p className="text-[10px] sm:text-sm font-semibold text-yellow-950">
                   Web apps with React, Next.js, Flask and more
                 </p>

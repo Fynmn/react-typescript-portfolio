@@ -224,3 +224,41 @@
     transform: translateX(-100%);
   }
 } */
+
+/* Custom styles for vertical timeline */
+.vertical-timeline-element--work {
+  margin-bottom: 2rem;
+}
+
+/* Custom tooltip styles */
+.tippy-box[data-theme~='primary'] {
+  font-size: 0.75rem; /* Smaller text size */
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-content {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  border: 2px solid #eab308;
+  transition: all 0.3s ease;
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-content:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-icon {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.vertical-timeline::before {
+  background: #eab308 !important;
+}
+
+@media (max-width: 768px) {
+  .vertical-timeline-element--work .vertical-timeline-element-content {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}

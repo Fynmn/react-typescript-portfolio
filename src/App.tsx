@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import Projects from "./components/sections/Projects";
 import Skills from "./components/sections/Skills";
 import Awards from "./components/sections/Awards";
+import WorkExperience from "./components/sections/WorkExperience";
 import Footer from "./components/sections/Footer";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Nav></Nav>
         <Introduction></Introduction>
         <Projects></Projects>
+        <WorkExperience></WorkExperience>
         <Skills></Skills>
         <Awards></Awards>
         <Footer></Footer>

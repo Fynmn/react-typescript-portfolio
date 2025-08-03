@@ -47,7 +47,7 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
         >
           <FaRegCopy />
           <p className="text-xs sm:text-base">
-            Copied 'nataliejane.pacificar@outlook.com'
+          Copied 'nataliejane.pacificar@outlook.com'
           </p>
         </FlatShadowCard>
       </div>
@@ -104,6 +104,18 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
           </div>
           <div className="flex flex-col justify-center items-center gap-y-4">
             <button
+                             ref={(el) => {
+                 if (el) {
+                   tippy(el, {
+                     content: "📋Click to copy email",
+                     placement: "top",
+                     trigger: "mouseenter",
+                     theme: "primary",
+                     arrow: false,
+                     offset: [0, 5], // [horizontal, vertical] - closer distance
+                   });
+                 }
+               }}
               onClick={handleCopyEmail}
               className="underline text-lg sm:text-2xl text-white hover:bg-yellow-500 active:scale-90"
             >

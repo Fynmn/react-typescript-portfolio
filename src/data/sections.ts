@@ -1,11 +1,11 @@
 const sections = [
   {
-    name: "Experiences",
-    href: "experiences-section",
-  },
-  {
     name: "Projects",
     href: "projects-section",
+  },
+  {
+    name: "Work Experience",
+    href: "work-experience-section",
   },
   {
     name: "Skills",

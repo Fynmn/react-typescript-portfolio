@@ -40,37 +40,6 @@ const projects: IProjectCard[] = [
 
     images: getHospiLinkFilenames(),
   },
-  // {
-  //   title: "Spring Valley Estates Neural Network",
-  //   description:
-  //     "A Residential Estate Management for Spring Valley. Our team developed a web application for the management and mobile application for the residents. I was the lead UI/UX designer and front-end developer for both mobile and web.",
-  //   imgUrl:
-  //     "https://cdn.dribbble.com/users/2547176/screenshots/15348170/media/1433f78530f2b5a8c9505fd6d699284f.png?compress=1&resize=800x600&vertical=top",
-  //   type: "Design & Development",
-  //   tags: [
-  //     "TypeScript",
-  //     "Next.js",
-  //     "React",
-  //     "React Libraries",
-  //     "TailwindCSS",
-  //     "Flutter",
-  //     "Dart",
-  //     "Figma",
-  //     "Git",
-  //     "GitLab",
-  //     "PostgreSQL",
-  //     "HTML5",
-  //     "CSS3",
-  //     "API",
-  //     "Chart.js",
-  //   ],
-  //   link: "null",
-  //   images: [
-  //     "https://picsum.photos/id/1018/1000/600/",
-  //     "https://picsum.photos/id/1015/1000/600/",
-  //     "https://picsum.photos/id/1019/1000/600/",
-  //   ],
-  // },
   {
     title: "Spring Valley Project",
     description:
@@ -184,26 +153,26 @@ const projects: IProjectCard[] = [
     link: "https://github.com/Fynmn/machine-learning-and-data-science",
     images: getMLDSFilenames(),
   },
-  {
-    title: "Time Tracking",
-    description:
-      "An app that allows a user to track their time by adding a time entry, with a number of hours as well as a task description and project. The users are able to see the tasks they rendered on each project weekly and their rendered hours on each project weekly as well. The user can create an account by signing up and then log in to their account. The data is currently stored in local storage and later on, I plan to use Firebase to store some data quickly together with React Query for fetching and caching data; then Clerk for user authentication and management. I'll also be using Zustand for local state management. The projects are currently in the form of a pre-filled list and I plan to make it dynamic later on so user can add custom projects.",
-    imgUrl: "assets/img/projects/ComingSoon_preview.png",
-    type: "Design & Development",
-    tags: [
-      "JavaScript",
-      "React",
-      "React Libraries",
-      "TailwindCSS",
-      "HTML",
-      "CSS",
-      "Git",
-      "GitHub",
-      "Figma",
-    ],
-    link: "https://timetracker.vercel.app",
-    images: getComingSoonFilenames(),
-  },
+  // {
+  //   title: "Time Tracking",
+  //   description:
+  //     "An app that allows a user to track their time by adding a time entry, with a number of hours as well as a task description and project. The users are able to see the tasks they rendered on each project weekly and their rendered hours on each project weekly as well. The user can create an account by signing up and then log in to their account. The data is currently stored in local storage and later on, I plan to use Firebase to store some data quickly together with React Query for fetching and caching data; then Clerk for user authentication and management. I'll also be using Zustand for local state management. The projects are currently in the form of a pre-filled list and I plan to make it dynamic later on so user can add custom projects.",
+  //   imgUrl: "assets/img/projects/ComingSoon_preview.png",
+  //   type: "Design & Development",
+  //   tags: [
+  //     "JavaScript",
+  //     "React",
+  //     "React Libraries",
+  //     "TailwindCSS",
+  //     "HTML",
+  //     "CSS",
+  //     "Git",
+  //     "GitHub",
+  //     "Figma",
+  //   ],
+  //   link: "https://timetracker.vercel.app",
+  //   images: getComingSoonFilenames(),
+  // },
   {
     title: "Nothing Held Back",
     description:
@@ -214,16 +183,16 @@ const projects: IProjectCard[] = [
     link: "https://natalie-frontend-dev-task.vercel.app/",
     images: getNothingHeldBackFilenames(),
   },
-  {
-    title: "Patient Booking",
-    description:
-      "A simple patient booking design which I accomplished in less than 12 hours and then collaborated with my UI/UX Designer friend to improve the UI/UX.",
-    imgUrl: "assets/img/projects/ComingSoon_preview.png",
-    type: "Design",
-    tags: ["Figma", "UI/UX"],
-    link: "https://www.figma.com/file/SW57Itc3iPwlZVbwQ25kkP/%5BNatalie%5D-CWP---Front-End-Developer---UI%2FUX-Screening?type=design&node-id=0-1&mode=design&t=jrX3klaGJSKjpm0s-0",
-    images: getComingSoonFilenames(),
-  },
+  // {
+  //   title: "Patient Booking",
+  //   description:
+  //     "A simple patient booking design which I accomplished in less than 12 hours and then collaborated with my UI/UX Designer friend to improve the UI/UX.",
+  //   imgUrl: "assets/img/projects/ComingSoon_preview.png",
+  //   type: "Design",
+  //   tags: ["Figma", "UI/UX"],
+  //   link: "https://www.figma.com/file/SW57Itc3iPwlZVbwQ25kkP/%5BNatalie%5D-CWP---Front-End-Developer---UI%2FUX-Screening?type=design&node-id=0-1&mode=design&t=jrX3klaGJSKjpm0s-0",
+  //   images: getComingSoonFilenames(),
+  // },
   {
     title: "Foodiverse",
     description: "An Online Personal Recipes Archive App.",
@@ -233,22 +202,6 @@ const projects: IProjectCard[] = [
     link: "https://figma.com",
     images: getComingSoonFilenames(),
   },
-
-  // {
-  //   title: "Job Board",
-  //   description:
-  //     "A website that allows employers to post job openings and job seekers to search for job opportunities. The website has features such as job search, job posting, user authentication, and resume submission.",
-  //   imgUrl:
-  //     "https://cdn.dribbble.com/userupload/5454629/file/original-6429af9e16d7b554437548da18b52c41.png?compress=1&resize=1024x768",
-  //   type: "Data Analytics",
-  //   tags: ["React", "Node.js", "Express.js", "MongoDB", "AWS S3"],
-  //   link: "https://booored.vercel.app",
-  //   images: [
-  //     "https://picsum.photos/id/1018/1000/600/",
-  //     "https://picsum.photos/id/1015/1000/600/",
-  //     "https://picsum.photos/id/1019/1000/600/",
-  //   ],
-  // },
 ];
 
 export default projects;
