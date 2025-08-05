@@ -50,6 +50,28 @@ const ProjectCard: React.FC<IProjectCard> = ({
     setIsOpen(false);
   };
 
+  // Scroll to top when modal opens
+  useEffect(() => {
+    if (isOpen) {
+      // Use setTimeout to ensure modal is fully rendered
+      setTimeout(() => {
+        // Try multiple selectors to find the scrollable container
+        const modalContent = (document.querySelector('.overflow-y-auto') || 
+                           document.querySelector('[role="dialog"]') ||
+                           document.querySelector('.fixed.inset-0.overflow-y-auto')) as HTMLElement;
+        if (modalContent) {
+          // Add smooth scroll behavior
+          modalContent.style.scrollBehavior = 'smooth';
+          modalContent.scrollTop = 0;
+          // Reset scroll behavior after animation
+          setTimeout(() => {
+            modalContent.style.scrollBehavior = 'auto';
+          }, 300);
+        }
+      }, 150);
+    }
+  }, [isOpen]);
+
   // console.log(getHospiLinkFilenames());
 
   // console.log("ThumbSwiper: " + JSON.stringify(thumbsSwiper));
@@ -81,38 +103,14 @@ const ProjectCard: React.FC<IProjectCard> = ({
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full my-16 max-w-2xl transform overflow-hidden bg-white p-8 text-left align-middle shadow-xl transition-all">
-                  {/* <div className="rounded-[20px] bg-yellow-500"> */}
+                                  <Dialog.Panel className="w-full my-16 max-w-2xl transform overflow-hidden bg-white p-8 text-left align-middle shadow-xl transition-all rounded-2xl">
                   <div className="flex justify-center items-center h-[150px] sm:h-96 w-full p-2 bg-slate-50">
-                    {/* <div className="h-[280px] w-full bg-yellow-500"> */}
-                    {/* <Swiper
-                      className="h-full w-full "
-                      pagination={{
-                        clickable: true,
-                        renderBullet: function (index, className) {
-                          return (
-                            '<span class="' +
-                            className +
-                            '">' +
-                            (index + 1) +
-                            "</span>"
-                          );
-                        },
-                      }}
-                      modules={[Pagination]}
-                      slidesPerView={1}
-                      onSlideChange={() => console.log("slide change")}
-                      onSwiper={(swiper) => console.log(swiper)}
-                    > */}
                     <Swiper
                       className="h-full w-full"
                       loop={true}
                       spaceBetween={10}
                       navigation={false}
-                      // thumbs={{ swiper: thumbsSwiper }}
-                      // thumbs={
-                      //   thumbsSwiper ? { swiper: thumbsSwiper } : undefined
-                      // }
+           
                       thumbs={{
                         swiper:
                           thumbsSwiper && !thumbsSwiper.destroyed
@@ -132,40 +130,6 @@ const ProjectCard: React.FC<IProjectCard> = ({
                         </SwiperSlide>
                       ))}
                     </Swiper>
-
-                    {/* </div> */}
-                    {/* <Swiper
-                      className="h-[280px] w-full rounded-2xl -top-1"
-                      pagination={{
-                        clickable: true,
-                        renderBullet: function (index, className) {
-                          return (
-                            '<span class="' +
-                            className +
-                            '">' +
-                            (index + 1) +
-                            "</span>"
-                          );
-                        },
-                      }}
-                      modules={[Pagination]}
-                      slidesPerView={1}
-                      onSlideChange={() => console.log("slide change")}
-                      onSwiper={(swiper) => console.log(swiper)}
-                    >
-                      {images.map((img, i) => (
-                        <FlatShadowCard key={i}>
-                          <SwiperSlide className="">
-                            <div className="flex items-center justify-center w-full h-full yellow-slide my-auto">
-                              <img
-                                className="absolute object-contain w-full h-full"
-                                src={img}
-                              />
-                            </div>
-                          </SwiperSlide>
-                        </FlatShadowCard>
-                      ))}
-                    </Swiper> */}
                   </div>
                   <div className="">
                     <Swiper
@@ -248,10 +212,10 @@ const ProjectCard: React.FC<IProjectCard> = ({
             viewport={{ once: true }}
           >
             <div className="cursor-pointer relative">
-              <div className="absolute inset-0 bg-yellow-500 h-[300px] w-full sm:h-[400px] sm:w-full rounded-2xl group-hover:animate-rotate animate-rotate_transition group-hover:rotate-3 group-hover:animate-grow animate-grow_transition group-hover:scale-101 transition-all duration-700 ease-out"></div>
-              <div className="relative h-[300px] w-full sm:h-[400px] sm:w-full z-0 group-hover:animate-grow animate-grow_transition transition-all duration-700 ease-out">
+              <div className="absolute inset-0 bg-yellow-500 h-[300px] w-full sm:h-[400px] sm:w-full rounded-2xl group-hover:rotate-3 group-hover:animate-grow animate-grow_transition group-hover:scale-101 transition-all duration-1000 ease-in-out"></div>
+              <div className="relative h-[300px] w-full sm:h-[400px] sm:w-full z-0 ">
                 <img
-                  className="absolute object-cover w-full h-full -top-4 -left-4 rounded-2xl transition-all duration-700 ease-out group-hover:scale-102"
+                  className="absolute object-cover w-full h-full -top-4 -left-4 rounded-2xl group-hover:rotate-[-3deg] group-hover:top-0 group-hover:left-0 transition-all duration-1000 ease-in-out"
                   src={imgUrl}
                 />
               </div>
