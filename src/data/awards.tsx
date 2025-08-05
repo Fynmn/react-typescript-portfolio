@@ -33,8 +33,30 @@ const awards: IAwardCard[] = [
     ),
     placement: "With High Distinction",
     others: "1.25 GWA",
-    title: "West Visayas State University - CICT. - BS Computer Science",
+    title: "West Visayas State University - CICT - BS Computer Science",
     date: "June 1, 2023",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-cover w-full h-full"
+        src="assets/img/psc_regional_cert.jpg"
+      ></img>
+    ),
+    placement: "Presenter",
+    title: "West Visayas State University - CICT Research Colloquium",
+    date: "May 12, 2023",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-cover w-full h-full"
+        src="assets/img/psc_regional_cert.jpg"
+      ></img>
+    ),
+    placement: "Best Project Presentation",
+    title: "On-the-Job Training Final Project Presentation (Team SVENN)",
+    date: "May 5, 2023",
   },
   {
     icon: (
@@ -69,17 +91,6 @@ const awards: IAwardCard[] = [
     placement: "Presenter",
     title: "2023 Fair on Innovation, Research and Extension Services (FIRES)",
     date: "June 1, 2022",
-  },
-  {
-    icon: (
-      <img
-        className="absolute object-cover w-full h-full"
-        src="assets/img/psc_regional_cert.jpg"
-      ></img>
-    ),
-    placement: "Best Project Presentation",
-    title: "On-the-Job Training Final Project Presentation (Team SVENN)",
-    date: "May 5, 2023",
   },
   {
     icon: (
