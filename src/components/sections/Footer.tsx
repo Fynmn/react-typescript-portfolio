@@ -34,8 +34,7 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
   }, []);
 
   const handleCopyEmail = () => {
-    clipboardCopy("nataliejane.pacificar@outlook.com");
-    // toast.success("Copied 'nataliejane.pacificar@outlook.com'");
+    clipboardCopy("nataliejanedev@gmail.com");
     toast.custom((t) => (
       <div className={`${t.visible ? "animate-enter" : "animate-exit"}`}>
         <FlatShadowCard
@@ -47,7 +46,7 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
         >
           <FaRegCopy />
           <p className="text-xs sm:text-base">
-          Copied 'nataliejane.pacificar@outlook.com'
+          Copied 'nataliejanedev@gmail.com'
           </p>
         </FlatShadowCard>
       </div>
@@ -119,7 +118,7 @@ const Footer: React.FC<FooterProps> = ({ sectionRef }) => {
               onClick={handleCopyEmail}
               className="underline text-lg sm:text-2xl text-white hover:bg-yellow-500 active:scale-90"
             >
-              nataliejane.pacificar@outlook.com
+              nataliejanedev@gmail.com
             </button>
             <a
               href="https://github.com/Fynmn/react-typescript-portfolio"
