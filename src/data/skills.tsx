@@ -32,10 +32,10 @@ const skills: ISkillCard[] = [
     icon: (
       <img
         className="absolute object-contain w-full h-full"
-        src="assets/react.svg"
+        src="assets/reactjs.svg"
       ></img>
     ),
-    label: "React",
+    label: "React.js",
   },
   {
     icon: (
@@ -44,7 +44,7 @@ const skills: ISkillCard[] = [
         src="assets/nextjs.svg"
       ></img>
     ),
-    label: "NextJS",
+    label: "Next.js",
   },
   {
     icon: (
@@ -77,10 +77,10 @@ const skills: ISkillCard[] = [
     icon: (
       <img
         className="absolute object-contain w-full h-full"
-        src="assets/jira.svg"
+        src="assets/nodejs.svg"
       ></img>
     ),
-    label: "Jira",
+    label: "Node.js",
   },
   {
     icon: (
@@ -185,6 +185,105 @@ const skills: ISkillCard[] = [
     ),
     label: "CSS3",
   },
+  {
+    icon: (
+      <img
+        className="absolute object-contain w-full h-full"
+        src="assets/tailwind.svg"
+      ></img>
+    ),
+    label: "Tailwind CSS",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-contain w-full h-full"
+        src="assets/flutter.svg"
+      ></img>
+    ),
+    label: "Flutter",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-contain w-full h-full"
+        src="assets/dart.svg"
+      ></img>
+    ),
+    label: "Dart",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-contain w-full h-full"
+        src="assets/openai.svg"
+      ></img>
+    ),
+    label: "OpenAI",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-contain w-full h-full"
+        src="assets/railway.svg"
+      ></img>
+    ),
+    label: "Railway",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-contain w-full h-full"
+        src="assets/vercel.svg"
+      ></img>
+    ),
+    label: "Vercel",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-contain w-full h-full"
+        src="assets/gcp.svg"
+      ></img>
+    ),
+    label: "Google Cloud Platform",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-contain w-full h-full"
+        src="assets/postman.svg"
+      ></img>
+    ),
+    label: "Postman",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-contain w-full h-full"
+        src="assets/bubble.svg"
+      ></img>
+    ),
+    label: "Bubble.io",
+  },
+  {
+    icon: (
+      <img
+        className="absolute object-contain w-full h-full"
+        src="assets/weweb.svg"
+      ></img>
+    ),
+    label: "Weweb.io",
+  },
+  // {
+  //   icon: (
+  //     <img
+  //       className="absolute object-contain w-full h-full"
+  //       src="assets/n8n.svg"
+  //     ></img>
+  //   ),
+  //   label: "n8n",
+  // },
 ];
 
 export default skills;

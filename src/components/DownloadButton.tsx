@@ -1,5 +1,6 @@
 import { Document, Page, pdfjs } from "react-pdf";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import FlatShadowCard from "./FlatShadowCard";
 
 // Import the worker file
@@ -39,11 +40,43 @@ const DownloadButton: React.FC<DownloadButtonProps> = ({ btnText, pdfUrl }) => {
         ))}
       </Document> */}
 
-      <div className="hover:scale-110">
-        <FlatShadowCard onClick={handleDownload}>
-          <p className="px-4 py-2 text-yellow-900">{btnText}</p>
-        </FlatShadowCard>
-      </div>
+      <motion.div 
+        whileHover={{ 
+          scale: 1.05,
+          y: -3,
+          transition: { 
+            type: "spring", 
+            stiffness: 300, 
+            damping: 15 
+          }
+        }}
+        whileTap={{ 
+          scale: 0.98,
+          y: -1,
+          transition: { duration: 0.1 }
+        }}
+        animate={{ 
+          y: [0, -1, 0],
+          transition: { 
+            duration: 3, 
+            repeat: Infinity, 
+            ease: "easeInOut",
+            delay: 2
+          }
+        }}
+      >
+                 <FlatShadowCard onClick={handleDownload}>
+           <motion.p 
+             className="px-4 py-2 text-yellow-900 font-semibold select-none"
+             whileHover={{ 
+               color: "#92400e", // darker yellow
+               transition: { duration: 0.2 }
+             }}
+           >
+             {btnText}
+           </motion.p>
+         </FlatShadowCard>
+      </motion.div>
     </div>
   );
 };
